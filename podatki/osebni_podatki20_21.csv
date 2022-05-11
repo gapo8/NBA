@@ -1,0 +1,541 @@
+PLAYER,TEAM,AGE,HEIGHT,WEIGHT,COLLEGE,COUNTRY,DRAFT YEAR,DRAFT ROUND,DRAFT NUMBER
+Aaron Gordon,DEN,25,6-8,235,Arizona,USA,2014,1,4
+Aaron Holiday,IND,24,6-0,185,UCLA,USA,2018,1,23
+Aaron Nesmith,BOS,21,6-5,215,Vanderbilt,USA,2020,1,14
+Abdel Nader,PHX,27,6-5,225,Iowa State,Egypt,2016,2,58
+Adam Mokoka,CHI,22,6-4,190,None,France,Undrafted,Undrafted,Undrafted
+Al Horford,OKC,35,6-9,240,Florida,Dominican Rep...,2007,1,3
+Al-Farouq Aminu,CHI,30,6-8,220,Wake Forest,USA,2010,1,8
+Alec Burks,NYK,29,6-6,214,Colorado,USA,2011,1,12
+Aleksej Pokusevski,OKC,19,7-0,190,None,Serbia,2020,1,17
+Alen Smailagic,GSW,20,6-10,215,None,Serbia,2019,2,39
+Alex Caruso,LAL,27,6-4,186,Texas A&M,USA,Undrafted,Undrafted,Undrafted
+Alex Len,WAS,28,7-0,250,Maryland,Ukraine,2013,1,5
+Alfonzo McKinnie,LAL,28,6-7,215,Wisc.-Green Bay,USA,Undrafted,Undrafted,Undrafted
+Alize Johnson,BKN,25,6-7,212,Missouri State,USA,2018,2,50
+Amida Brimah,IND,27,6-10,230,Connecticut,USA,Undrafted,Undrafted,Undrafted
+Amir Coffey,LAC,24,6-7,210,Minnesota,USA,Undrafted,Undrafted,Undrafted
+Anderson Varejao,CLE,38,6-11,260,None,Brazil,2004,2,30
+Andre Drummond,LAL,27,6-10,279,Connecticut,USA,2012,1,9
+Andre Iguodala,MIA,37,6-6,215,Arizona,USA,2004,1,9
+Andre Roberson,BKN,29,6-7,210,Colorado,USA,2013,1,26
+Andrew Wiggins,GSW,26,6-7,197,Kansas,Canada,2014,1,1
+Anfernee Simons,POR,22,6-3,181,None,USA,2018,1,24
+Anthony Davis,LAL,28,6-10,253,Kentucky,USA,2012,1,1
+Anthony Edwards,MIN,19,6-4,225,Georgia,USA,2020,1,1
+Anthony Gill,WAS,28,6-7,230,Virginia,USA,Undrafted,Undrafted,Undrafted
+Anthony Lamb,HOU,23,6-6,227,Vermont,USA,Undrafted,Undrafted,Undrafted
+Anthony Tolliver,PHI,36,6-8,240,Creighton,USA,Undrafted,Undrafted,Undrafted
+Anzejs Pasecniks,WAS,25,7-1,229,None,Latvia,2017,1,25
+Armoni Brooks,HOU,23,6-3,195,Houston,USA,2019,,
+Aron Baynes,TOR,34,6-10,260,Washington State,Australia,Undrafted,Undrafted,Undrafted
+Ashton Hagans,MIN,21,6-3,190,Kentucky,USA,Undrafted,Undrafted,Undrafted
+Austin Rivers,DEN,28,6-4,200,Duke,USA,2012,1,10
+Avery Bradley,HOU,30,6-3,180,Texas-Austin,USA,2010,1,19
+Axel Toupane,MIL,28,6-7,210,None,France,Undrafted,Undrafted,Undrafted
+Bam Adebayo,MIA,23,6-9,255,Kentucky,USA,2017,1,14
+Ben McLemore,LAL,28,6-3,195,Kansas,USA,2013,1,7
+Ben Simmons,PHI,24,6-11,240,Louisiana State,Australia,2016,1,1
+Bismack Biyombo,CHA,28,6-8,255,None,DRC,2011,1,7
+Blake Griffin,BKN,32,6-9,250,Oklahoma,USA,2009,1,1
+Boban Marjanovic,DAL,32,7-4,290,None,Serbia,Undrafted,Undrafted,Undrafted
+Bobby Portis,MIL,26,6-10,250,Arkansas,USA,2015,1,22
+Bogdan Bogdanovic,ATL,28,6-6,220,None,Serbia,2014,1,27
+Bojan Bogdanovic,UTA,32,6-7,226,None,Croatia,2011,2,31
+Bol Bol,DEN,21,7-2,220,Oregon,Sudan,2019,2,44
+Brad Wanamaker,CHA,31,6-3,210,Pittsburgh,USA,Undrafted,Undrafted,Undrafted
+Bradley Beal,WAS,28,6-3,207,Florida,USA,2012,1,3
+Brandon Clarke,MEM,24,6-8,215,Gonzaga,Canada,2019,1,21
+Brandon Goodwin,ATL,25,6-0,180,Florida Gulf Coast,USA,Undrafted,Undrafted,Undrafted
+Brandon Ingram,NOP,23,6-8,190,Duke,USA,2016,1,2
+Brian Bowen II,IND,22,6-6,190,None,USA,Undrafted,Undrafted,Undrafted
+Brodric Thomas,CLE,24,6-5,185,Truman State,USA,Undrafted,Undrafted,Undrafted
+Brook Lopez,MIL,33,7-0,282,Stanford,USA,2008,1,10
+Bruce Brown,BKN,24,6-4,202,Miami,USA,2018,2,42
+Bruno Caboclo,HOU,25,6-9,218,None,Brazil,2014,1,20
+Bruno Fernando,ATL,22,6-9,240,Maryland,Angola,2019,2,34
+Bryn Forbes,MIL,27,6-2,205,Michigan State,USA,Undrafted,Undrafted,Undrafted
+Buddy Hield,SAC,28,6-4,220,Oklahoma,Bahamas,2016,1,6
+CJ Elleby,POR,21,6-6,200,Washington State,USA,2020,2,46
+CJ McCollum,POR,29,6-3,190,Lehigh,USA,2013,1,10
+Caleb Martin,CHA,25,6-5,205,Nevada-Reno,USA,Undrafted,Undrafted,Undrafted
+Cam Reddish,ATL,21,6-8,218,Duke,USA,2019,1,10
+Cameron Johnson,PHX,25,6-8,210,North Carolina,USA,2019,1,11
+Cameron Oliver,HOU,24,6-8,225,Nevada,USA,Undrafted,Undrafted,Undrafted
+Cameron Payne,PHX,26,6-1,183,Murray State,USA,2015,1,14
+Cameron Reynolds,HOU,26,6-7,225,Tulane,USA,Undrafted,Undrafted,Undrafted
+Caris LeVert,IND,26,6-6,205,Michigan,USA,2016,1,20
+Carmelo Anthony,POR,37,6-7,238,Syracuse,USA,2003,1,3
+Carsen Edwards,BOS,23,5-11,200,Purdue,USA,2019,2,33
+Cassius Stanley,IND,21,6-5,190,Duke,USA,2020,2,54
+Cassius Winston,WAS,23,6-1,185,Michigan State,USA,2020,2,53
+Cedi Osman,CLE,26,6-7,230,None,Turkey,2015,2,31
+Chandler Hutchison,WAS,25,6-6,210,Boise State,USA,2018,1,22
+Charlie Brown Jr.,OKC,24,6-6,199,St. Joseph's (PA),USA,Undrafted,Undrafted,Undrafted
+Chasson Randle,ORL,28,6-2,185,Stanford,USA,2015,,
+Chimezie Metu,SAC,24,6-9,225,Southern California,USA,2018,2,49
+Chris Boucher,TOR,28,6-9,200,Oregon,Saint Lucia,Undrafted,Undrafted,Undrafted
+Chris Chiozza,BKN,25,5-11,175,Florida,USA,Undrafted,Undrafted,Undrafted
+Chris Paul,PHX,36,6-0,175,Wake Forest,USA,2005,1,4
+Chris Silva,SAC,24,6-8,234,South Carolina,Gabon,Undrafted,Undrafted,Undrafted
+Christian Wood,HOU,25,6-10,214,UNLV,USA,Undrafted,Undrafted,Undrafted
+Chuma Okeke,ORL,22,6-6,229,Auburn,USA,2019,1,16
+Clint Capela,ATL,27,6-10,240,None,Switzerland,2014,1,25
+Coby White,CHI,21,6-5,195,North Carolina,USA,2019,1,7
+Cody Martin,CHA,25,6-5,205,Nevada-Reno,USA,2019,2,36
+Cody Zeller,CHA,28,6-11,240,Indiana,USA,2013,1,4
+Cole Anthony,ORL,21,6-2,185,North Carolina,USA,2020,1,15
+Collin Sexton,CLE,22,6-1,190,Alabama,USA,2018,1,8
+Cory Joseph,DET,29,6-3,200,Texas-Austin,Canada,2011,1,29
+Cristiano Felicio,CHI,28,6-11,270,None,Brazil,Undrafted,Undrafted,Undrafted
+D'Angelo Russell,MIN,25,6-4,193,Ohio State,USA,2015,1,2
+D.J. Augustin,HOU,33,5-11,183,Texas-Austin,USA,2008,1,9
+D.J. Wilson,HOU,25,6-10,231,Michigan,USA,2017,1,17
+DaQuan Jeffries,SAS,23,6-5,230,Tulsa,USA,Undrafted,Undrafted,Undrafted
+Dakota Mathias,PHI,25,6-4,200,Purdue,USA,2018,,
+Damian Jones,SAC,26,6-11,245,Vanderbilt,USA,2016,1,30
+Damian Lillard,POR,30,6-2,195,Weber State,USA,2012,1,6
+Damion Lee,GSW,28,6-5,210,Drexel,USA,Undrafted,Undrafted,Undrafted
+Damyean Dotson,CLE,27,6-5,210,Houston,USA,2017,2,44
+Daniel Gafford,WAS,22,6-10,234,Arkansas,USA,2019,2,38
+Daniel Oturu,LAC,21,6-8,240,Minnesota,USA,2020,2,33
+Daniel Theis,CHI,29,6-8,245,None,Germany,Undrafted,Undrafted,Undrafted
+Danilo Gallinari,ATL,32,6-10,233,None,Italy,2008,1,6
+Danny Green,PHI,34,6-6,215,North Carolina,USA,2009,2,46
+Dante Exum,HOU,25,6-5,214,None,Australia,2014,1,5
+Danuel House Jr.,HOU,28,6-6,220,Texas A&M,USA,Undrafted,Undrafted,Undrafted
+Dario Saric,PHX,27,6-10,225,None,Croatia,2014,1,12
+Darius Bazley,OKC,21,6-8,208,None,USA,2019,1,23
+Darius Garland,CLE,21,6-1,192,Vanderbilt,USA,2019,1,5
+Darius Miller,OKC,31,6-6,225,Kentucky,USA,2012,2,46
+David Nwaba,HOU,28,6-5,219,Cal Poly,USA,Undrafted,Undrafted,Undrafted
+Davis Bertans,WAS,28,6-10,225,None,Latvia,2011,2,42
+De'Aaron Fox,SAC,23,6-3,185,Kentucky,USA,2017,1,5
+De'Andre Hunter,ATL,23,6-8,225,Virginia,USA,2019,1,4
+De'Anthony Melton,MEM,23,6-2,200,Southern California,USA,2018,2,46
+DeAndre Jordan,BKN,32,6-11,265,Texas A&M,USA,2008,2,35
+DeAndre' Bembry,TOR,26,6-5,210,St. Joseph's (PA),USA,2016,1,21
+DeMar DeRozan,SAS,31,6-6,220,Southern California,USA,2009,1,9
+DeMarcus Cousins,LAC,30,6-10,270,Kentucky,USA,2010,1,5
+Dean Wade,CLE,24,6-9,228,Kansas State,USA,Undrafted,Undrafted,Undrafted
+Deandre Ayton,PHX,22,6-11,250,Arizona,Bahamas,2018,1,1
+Deividas Sirvydis,DET,21,6-8,190,None,Lithuania,2019,2,37
+Dejounte Murray,SAS,24,6-4,180,Washington,USA,2016,1,29
+Delon Wright,SAC,29,6-5,185,Utah,USA,2015,1,20
+Deni Avdija,WAS,20,6-9,210,None,Israel,2020,1,9
+Dennis Schroder,LAL,27,6-3,172,None,Germany,2013,1,17
+Dennis Smith Jr.,DET,23,6-2,205,North Carolina State,USA,2017,1,9
+Denzel Valentine,CHI,27,6-4,220,Michigan State,USA,2016,1,14
+Derrick Favors,UTA,29,6-9,265,Georgia Tech,USA,2010,1,3
+Derrick Jones Jr.,POR,24,6-5,210,UNLV,USA,Undrafted,Undrafted,Undrafted
+Derrick Rose,NYK,32,6-2,200,Memphis,USA,2008,1,1
+Derrick White,SAS,26,6-4,190,Colorado,USA,2017,1,29
+Desmond Bane,MEM,23,6-5,215,TCU,USA,2020,1,30
+Devin Booker,PHX,24,6-5,206,Kentucky,USA,2015,1,13
+Devin Cannady,ORL,25,6-2,183,Princeton,USA,2019,,
+Devin Vassell,SAS,20,6-5,200,Florida State,USA,2020,1,11
+Devon Dotson,CHI,21,6-2,185,Kansas,USA,Undrafted,Undrafted,Undrafted
+Devontae Cacok,LAL,24,6-7,240,North Carolina-Wilmington,USA,Undrafted,Undrafted,Undrafted
+Devonte' Graham,CHA,26,6-1,195,Kansas,USA,2018,2,34
+Dewayne Dedmon,MIA,31,7-0,245,Southern California,USA,Undrafted,Undrafted,Undrafted
+Didi Louzada,NOP,21,6-5,188,None,Brazil,2019,2,35
+Dillon Brooks,MEM,25,6-7,225,Oregon,Canada,2017,2,45
+Domantas Sabonis,IND,25,6-11,240,Gonzaga,Lithuania,2016,1,11
+Donovan Mitchell,UTA,24,6-1,215,Louisville,USA,2017,1,13
+Donta Hall,ORL,23,6-10,230,Alabama,USA,Undrafted,Undrafted,Undrafted
+Donte DiVincenzo,MIL,24,6-4,203,Villanova,USA,2018,1,17
+Dorian Finney-Smith,DAL,28,6-7,220,Florida,USA,Undrafted,Undrafted,Undrafted
+Doug McDermott,IND,29,6-7,225,Creighton,USA,2014,1,11
+Draymond Green,GSW,31,6-6,230,Michigan State,USA,2012,2,35
+Drew Eubanks,SAS,24,6-9,245,Oregon State,USA,Undrafted,Undrafted,Undrafted
+Duncan Robinson,MIA,27,6-7,215,Michigan,USA,Undrafted,Undrafted,Undrafted
+Dwayne Bacon,ORL,25,6-6,221,Florida State,USA,2017,2,40
+Dwight Howard,PHI,35,6-10,265,None,USA,2004,1,1
+Dwight Powell,DAL,29,6-10,240,Stanford,Canada,2014,2,45
+Dylan Windler,CLE,24,6-6,196,Belmont,USA,2019,1,26
+E'Twaun Moore,PHX,32,6-3,191,Purdue,USA,2011,2,55
+Ed Davis,MIN,32,6-9,218,North Carolina,USA,2010,1,13
+Edmond Sumner,IND,25,6-4,196,Xavier,USA,2017,2,52
+Elfrid Payton,NYK,27,6-3,195,Louisana-Lafayette,USA,2014,1,10
+Elijah Bryant,MIL,26,6-5,210,Brigham Young,USA,Undrafted,Undrafted,Undrafted
+Elijah Hughes,UTA,23,6-5,215,Syracuse,USA,2020,2,39
+Enes Freedom,POR,29,6-10,250,None,Turkey,2011,1,3
+Eric Bledsoe,NOP,31,6-1,214,Kentucky,USA,2010,1,18
+Eric Gordon,HOU,32,6-3,215,Indiana,USA,2008,1,7
+Eric Paschall,GSW,24,6-6,255,Villanova,USA,2019,2,41
+Ersan Ilyasova,UTA,34,6-9,235,None,Turkey,2005,2,36
+Evan Fournier,BOS,28,6-7,205,None,France,2012,1,20
+Facundo Campazzo,DEN,30,5-10,195,None,Argentina,Undrafted,Undrafted,Undrafted
+Frank Jackson,DET,23,6-3,205,Duke,USA,2017,2,31
+Frank Kaminsky,PHX,28,7-0,240,Wisconsin,USA,2015,1,9
+Frank Mason III,ORL,27,5-11,190,Kansas,USA,2017,2,34
+Frank Ntilikina,NYK,22,6-4,200,None,France,2017,1,8
+Fred VanVleet,TOR,27,6-1,197,Wichita State,USA,Undrafted,Undrafted,Undrafted
+Freddie Gillespie,TOR,24,6-9,245,Baylor,USA,Undrafted,Undrafted,Undrafted
+Furkan Korkmaz,PHI,23,6-7,202,None,Turkey,2016,1,26
+Gabe Vincent,MIA,25,6-3,200,California-Santa Barbara,USA,Undrafted,Undrafted,Undrafted
+Gabriel Deck,OKC,26,6-6,231,None,Argentina,Undrafted,Undrafted,Undrafted
+Garrett Temple,CHI,35,6-5,195,Louisiana State,USA,Undrafted,Undrafted,Undrafted
+Garrison Mathews,WAS,24,6-5,215,Lipscomb,USA,Undrafted,Undrafted,Undrafted
+Gary Clark,PHI,26,6-6,225,Cincinnati,USA,Undrafted,Undrafted,Undrafted
+Gary Harris,ORL,26,6-4,210,Michigan State,USA,2014,1,19
+Gary Payton II,GSW,28,6-3,195,Oregon State,USA,Undrafted,Undrafted,Undrafted
+Gary Trent Jr.,TOR,22,6-5,209,Duke,USA,2018,2,37
+George Hill,PHI,35,6-4,188,Indiana-Purdue Indianapolis,USA,2008,1,26
+Georges Niang,UTA,28,6-7,230,Iowa State,USA,2016,2,50
+Giannis Antetokounmpo,MIL,26,6-11,242,None,Greece,2013,1,15
+Glenn Robinson III,SAC,27,6-6,222,Michigan,USA,2014,2,40
+Goga Bitadze,IND,21,6-11,250,None,Georgia,2019,1,18
+Goran Dragic,MIA,35,6-3,190,None,Slovenia,2008,2,45
+Gordon Hayward,CHA,31,6-7,225,Butler,USA,2010,1,9
+Gorgui Dieng,SAS,31,6-10,252,Louisville,Senegal,2013,1,21
+Grant Riller,CHA,24,6-2,190,College of Charleston,USA,2020,2,56
+Grant Williams,BOS,22,6-6,236,Tennessee,USA,2019,1,22
+Grayson Allen,MEM,25,6-4,198,Duke,USA,2018,1,21
+Greg Whittington,DEN,28,6-8,210,Georgetown,USA,Undrafted,Undrafted,Undrafted
+Hamidou Diallo,DET,22,6-5,202,Kentucky,USA,2018,2,45
+Harrison Barnes,SAC,29,6-8,225,North Carolina,USA,2012,1,7
+Harry Giles III,POR,23,6-11,240,Duke,USA,2017,1,20
+Hassan Whiteside,SAC,32,7-0,265,Marshall,USA,2010,2,33
+Henry Ellenson,TOR,24,6-10,240,Marquette,USA,2016,1,18
+Ignas Brazdeikis,ORL,22,6-6,221,Michigan,Canada,2019,2,47
+Iman Shumpert,BKN,31,6-5,212,Georgia Tech,USA,2011,1,17
+Immanuel Quickley,NYK,22,6-3,190,Kentucky,USA,2020,1,25
+Isaac Bonga,WAS,21,6-8,180,None,Germany,2018,2,39
+Isaac Okoro,CLE,20,6-5,225,Auburn,USA,2020,1,5
+Isaiah Hartenstein,CLE,23,7-0,250,None,Germany,2017,2,43
+Isaiah Joe,PHI,21,6-4,165,Arkansas,USA,2020,2,49
+Isaiah Roby,OKC,23,6-8,230,Nebraska-Lincoln,USA,2019,2,45
+Isaiah Stewart,DET,20,6-8,250,Washington,USA,2020,1,16
+Isaiah Thomas,NOP,32,5-9,185,Washington,USA,2011,2,60
+Ish Smith,WAS,32,6-0,175,Wake Forest,USA,Undrafted,Undrafted,Undrafted
+Ivica Zubac,LAC,24,7-0,240,None,Croatia,2016,2,32
+JJ Redick,DAL,37,6-3,200,Duke,USA,2006,1,11
+Ja Morant,MEM,21,6-3,174,Murray State,USA,2019,1,2
+JaKarr Sampson,IND,28,6-7,214,"St. John's, N.Y.",USA,Undrafted,Undrafted,Undrafted
+JaMychal Green,DEN,31,6-8,227,Alabama,USA,Undrafted,Undrafted,Undrafted
+JaVale McGee,DEN,33,7-0,270,Nevada-Reno,USA,2008,1,18
+Jabari Parker,BOS,26,6-8,245,Duke,USA,2014,1,2
+Jaden McDaniels,MIN,20,6-9,185,Washington,USA,2020,1,28
+Jae Crowder,PHX,30,6-6,235,Marquette,USA,2012,2,34
+Jae'Sean Tate,HOU,25,6-4,230,Ohio State,USA,Undrafted,Undrafted,Undrafted
+Jahlil Okafor,DET,25,6-10,270,Duke,USA,2015,1,3
+Jahmi'us Ramsey,SAC,20,6-3,190,Texas Tech,USA,2020,2,43
+Jake Layman,MIN,27,6-8,209,Maryland,USA,2016,2,47
+Jakob Poeltl,SAS,25,7-1,245,Utah,Austria,2016,1,9
+Jalen Brunson,DAL,24,6-1,190,Villanova,USA,2018,2,33
+Jalen Harris,TOR,22,6-5,195,Nevada,USA,2020,2,59
+Jalen Lecque,IND,21,6-4,185,None,USA,Undrafted,Undrafted,Undrafted
+Jalen McDaniels,CHA,23,6-9,205,San Diego State,USA,2019,2,52
+Jalen Smith,PHX,21,6-10,215,Maryland,USA,2020,1,10
+Jamal Murray,DEN,24,6-3,215,Kentucky,Canada,2016,1,7
+James Ennis III,ORL,30,6-6,215,Cal State-Long Beach,USA,2013,2,50
+James Harden,BKN,31,6-5,220,Arizona State,USA,2009,1,3
+James Johnson,NOP,34,6-7,240,Wake Forest,USA,2009,1,16
+James Nunnally,NOP,30,6-7,205,California-Santa Barbara,USA,Undrafted,Undrafted,Undrafted
+James Wiseman,GSW,20,7-0,240,Memphis,USA,2020,1,2
+Jared Dudley,LAL,35,6-6,237,Boston College,USA,2007,1,22
+Jared Harper,NYK,23,5-10,175,Auburn,USA,Undrafted,Undrafted,Undrafted
+Jaren Jackson Jr.,MEM,21,6-11,242,Michigan State,USA,2018,1,4
+Jarred Vanderbilt,MIN,22,6-9,214,Kentucky,USA,2018,2,41
+Jarrell Brantley,UTA,25,6-5,250,College of Charleston,USA,2019,2,50
+Jarrett Allen,CLE,23,6-11,243,Texas-Austin,USA,2017,1,22
+Jarrett Culver,MIN,22,6-6,195,Texas Tech,USA,2019,1,6
+Javonte Green,CHI,27,6-4,205,Radford,USA,Undrafted,Undrafted,Undrafted
+Jaxson Hayes,NOP,21,6-11,220,Texas-Austin,USA,2019,1,8
+Jay Scrubb,LAC,20,6-5,220,John A. Logan,USA,2020,2,55
+Jaylen Adams,MIL,25,6-0,225,St. Bonaventure,USA,Undrafted,Undrafted,Undrafted
+Jaylen Brown,BOS,24,6-6,223,California,USA,2016,1,3
+Jaylen Hoard,OKC,22,6-8,216,Wake Forest,France,Undrafted,Undrafted,Undrafted
+Jaylen Nowell,MIN,21,6-4,201,Washington,USA,2019,2,43
+Jayson Tatum,BOS,23,6-8,210,Duke,USA,2017,1,3
+Jeff Green,BKN,34,6-8,235,Georgetown,USA,2007,1,5
+Jeff Teague,MIL,33,6-3,195,Wake Forest,USA,2009,1,19
+Jerami Grant,DET,27,6-8,210,Syracuse,USA,2014,2,39
+Jeremiah Martin,CLE,25,6-2,185,Memphis,USA,Undrafted,Undrafted,Undrafted
+Jeremy Lamb,IND,29,6-5,180,Connecticut,USA,2012,1,12
+Jerome Robinson,WAS,24,6-4,190,Boston College,USA,2018,1,13
+Jevon Carter,PHX,25,6-1,200,West Virginia,USA,2018,2,32
+Jimmy Butler,MIA,31,6-7,230,Marquette,USA,2011,1,30
+Joe Harris,BKN,29,6-6,220,Virginia,USA,2014,2,33
+Joe Ingles,UTA,33,6-8,220,None,Australia,Undrafted,Undrafted,Undrafted
+Joel Embiid,PHI,27,7-0,280,Kansas,Cameroon,2014,1,3
+John Collins,ATL,23,6-9,235,Wake Forest,USA,2017,1,19
+John Konchar,MEM,25,6-5,210,Indiana-Purdue Fort Wayne,USA,Undrafted,Undrafted,Undrafted
+John Wall,HOU,30,6-3,210,Kentucky,USA,2010,1,1
+Jonas Valanciunas,MEM,29,6-11,265,None,Lithuania,2011,1,5
+Jontay Porter,MEM,21,6-11,240,Missouri,USA,Undrafted,Undrafted,Undrafted
+Jordan Bell,GSW,26,6-8,216,Oregon,USA,2017,2,38
+Jordan Bone,ORL,23,6-2,180,Tennessee,USA,2019,2,57
+Jordan Clarkson,UTA,29,6-4,194,Missouri,USA,2014,2,46
+Jordan McLaughlin,MIN,25,5-11,185,Southern California,USA,Undrafted,Undrafted,Undrafted
+Jordan Nwora,MIL,22,6-8,225,Louisville,USA,2020,2,45
+Jordan Poole,GSW,22,6-4,194,Michigan,USA,2019,1,28
+Josh Green,DAL,20,6-5,200,Arizona,Australia,2020,1,18
+Josh Hall,OKC,20,6-9,190,None,USA,Undrafted,Undrafted,Undrafted
+Josh Hart,NOP,26,6-5,215,Villanova,USA,2017,1,30
+Josh Jackson,DET,24,6-8,207,Kansas,USA,2017,1,4
+Josh Okogie,MIN,22,6-4,213,Georgia Tech,Nigeria,2018,1,20
+Josh Richardson,DAL,27,6-5,200,Tennessee,USA,2015,2,40
+Jrue Holiday,MIL,31,6-3,205,UCLA,USA,2009,1,17
+Juan Toscano-Anderson,GSW,28,6-6,209,Marquette,USA,Undrafted,Undrafted,Undrafted
+Juancho Hernangomez,MIN,25,6-9,214,None,Spain,2016,1,15
+Julius Randle,NYK,26,6-8,250,Kentucky,USA,2014,1,7
+Justin Holiday,IND,32,6-6,180,Washington,USA,Undrafted,Undrafted,Undrafted
+Justin Jackson,MIL,26,6-8,220,North Carolina,USA,2017,1,15
+Justin James,SAC,24,6-7,190,Wyoming,USA,2019,2,40
+Justin Patton,HOU,24,6-11,241,Creighton,USA,2017,1,16
+Justin Robinson,OKC,23,6-1,195,Virginia Tech,USA,2019,,
+Justise Winslow,MEM,25,6-6,222,Duke,USA,2015,1,10
+Jusuf Nurkic,POR,26,6-11,290,None,Bosnia and He...,2014,1,16
+Juwan Morgan,UTA,24,6-7,232,Indiana,USA,Undrafted,Undrafted,Undrafted
+KZ Okpala,MIA,22,6-8,215,Stanford,USA,2019,2,32
+Karim Mane,ORL,21,6-3,190,Vanier,Senegal,Undrafted,Undrafted,Undrafted
+Karl-Anthony Towns,MIN,25,6-11,248,Kentucky,USA,2015,1,1
+Kawhi Leonard,LAC,30,6-7,225,San Diego State,USA,2011,1,15
+Keita Bates-Diop,SAS,25,6-8,229,Ohio State,USA,2018,2,48
+Kelan Martin,IND,25,6-5,230,Butler,USA,Undrafted,Undrafted,Undrafted
+Keldon Johnson,SAS,21,6-5,220,Kentucky,USA,2019,1,29
+Keljin Blevins,POR,25,6-4,200,Montana State,USA,2019,,
+Kelly Olynyk,HOU,30,6-11,240,Gonzaga,Canada,2013,1,13
+Kelly Oubre Jr.,GSW,25,6-7,203,Kansas,USA,2015,1,15
+Kemba Walker,BOS,31,6-0,184,Connecticut,USA,2011,1,9
+Kendrick Nunn,MIA,25,6-2,190,Oakland,USA,Undrafted,Undrafted,Undrafted
+Kenrich Williams,OKC,26,6-6,210,TCU,USA,Undrafted,Undrafted,Undrafted
+Kent Bazemore,GSW,31,6-4,195,Old Dominion,USA,Undrafted,Undrafted,Undrafted
+Kentavious Caldwell-Pope,LAL,28,6-5,204,Georgia,USA,2013,1,8
+Kenyon Martin Jr.,HOU,20,6-6,215,None,USA,2020,2,52
+Kevin Durant,BKN,32,6-10,240,Texas-Austin,USA,2007,1,2
+Kevin Huerter,ATL,22,6-7,190,Maryland,USA,2018,1,19
+Kevin Knox II,NYK,21,6-7,215,Kentucky,USA,2018,1,9
+Kevin Love,CLE,32,6-8,251,UCLA,USA,2008,1,5
+Kevin Porter Jr.,HOU,21,6-4,203,Southern California,USA,2019,1,30
+Kevon Looney,GSW,25,6-9,222,UCLA,USA,2015,1,30
+Khem Birch,TOR,28,6-9,233,UNLV,Canada,Undrafted,Undrafted,Undrafted
+Khris Middleton,MIL,29,6-7,222,Texas A&M,USA,2012,2,39
+Khyri Thomas,HOU,25,6-3,210,Creighton,USA,2018,2,38
+Killian Hayes,DET,19,6-5,195,None,France,2020,1,7
+Killian Tillie,MEM,23,6-9,220,Gonzaga,France,Undrafted,Undrafted,Undrafted
+Kira Lewis Jr.,NOP,20,6-1,170,Alabama,USA,2020,1,13
+Kostas Antetokounmpo,LAL,23,6-10,200,Dayton,Greece,2018,2,60
+Kris Dunn,ATL,27,6-3,205,Providence,USA,2016,1,5
+Kristaps Porzingis,DAL,25,7-3,240,None,Latvia,2015,1,4
+Kyle Anderson,MEM,27,6-9,230,UCLA,USA,2014,1,30
+Kyle Guy,SAC,23,6-1,167,Virginia,USA,2019,2,55
+Kyle Kuzma,LAL,25,6-10,221,Utah,USA,2017,1,27
+Kyle Lowry,TOR,35,6-0,196,Villanova,USA,2006,1,24
+Kyrie Irving,BKN,29,6-2,195,Duke,Australia,2011,1,1
+LaMarcus Aldridge,BKN,35,6-11,250,Texas-Austin,USA,2006,1,2
+LaMelo Ball,CHA,19,6-6,180,None,USA,2020,1,3
+Lamar Stevens,CLE,23,6-6,230,Penn State,USA,Undrafted,Undrafted,Undrafted
+Landry Shamet,BKN,24,6-4,190,Wichita State,USA,2018,1,26
+Langston Galloway,PHX,29,6-1,200,St. Joseph's (PA),USA,Undrafted,Undrafted,Undrafted
+Larry Nance Jr.,CLE,28,6-7,245,Wyoming,USA,2015,1,27
+Lauri Markkanen,CHI,24,7-0,240,Arizona,Finland,2017,1,7
+LeBron James,LAL,36,6-9,250,None,USA,2003,1,1
+Lonnie Walker IV,SAS,22,6-4,204,Miami,USA,2018,1,18
+Lonzo Ball,NOP,23,6-6,190,UCLA,USA,2017,1,2
+Lou Williams,ATL,34,6-1,175,None,USA,2005,2,45
+Louis King,SAC,22,6-7,205,Oregon,USA,Undrafted,Undrafted,Undrafted
+Luguentz Dort,OKC,22,6-3,215,Arizona State,Canada,Undrafted,Undrafted,Undrafted
+Luka Doncic,DAL,22,6-7,230,None,Slovenia,2018,1,3
+Luka Samanic,SAS,21,6-10,227,None,Croatia,2019,1,19
+Luke Kennard,LAC,25,6-5,206,Duke,USA,2017,1,12
+Luke Kornet,BOS,25,7-2,250,Vanderbilt,USA,Undrafted,Undrafted,Undrafted
+Malachi Flynn,TOR,23,6-1,175,San Diego State,USA,2020,1,29
+Malcolm Brogdon,IND,28,6-5,229,Virginia,USA,2016,2,36
+Malik Beasley,MIN,24,6-4,187,Florida State,USA,2016,1,19
+Malik Fitts,LAC,23,6-8,230,St. Mary's College,USA,Undrafted,Undrafted,Undrafted
+Malik Monk,CHA,23,6-3,200,Kentucky,USA,2017,1,11
+Mamadi Diakite,MIL,24,6-9,228,Virginia,Guinea,Undrafted,Undrafted,Undrafted
+Marc Gasol,LAL,36,6-11,255,None,Spain,2007,2,48
+Marcus Morris Sr.,LAC,31,6-8,218,Kansas,USA,2011,1,14
+Marcus Smart,BOS,27,6-3,220,Oklahoma State,USA,2014,1,6
+Markelle Fultz,ORL,23,6-3,209,Washington,USA,2017,1,1
+Markieff Morris,LAL,31,6-9,245,Kansas,USA,2011,1,13
+Markus Howard,DEN,22,5-10,175,Marquette,USA,Undrafted,Undrafted,Undrafted
+Marques Bolden,CLE,23,6-10,249,Duke,USA,2019,,
+Marquese Chriss,GSW,23,6-9,240,Washington,USA,2016,1,8
+Marvin Bagley III,SAC,22,6-11,235,Duke,USA,2018,1,2
+Mason Jones,PHI,22,6-4,200,Arkansas,USA,Undrafted,Undrafted,Undrafted
+Mason Plumlee,DET,31,6-11,254,Duke,USA,2013,1,22
+Matisse Thybulle,PHI,24,6-5,201,Washington,USA,2019,1,20
+Matt Thomas,UTA,26,6-4,190,Iowa State,USA,Undrafted,Undrafted,Undrafted
+Matthew Dellavedova,CLE,30,6-3,200,St.Mary's College of California,Australia,Undrafted,Undrafted,Undrafted
+Maurice Harkless,SAC,28,6-7,220,St. John's,USA,2012,1,15
+Max Strus,MIA,25,6-5,215,DePaul,USA,Undrafted,Undrafted,Undrafted
+Maxi Kleber,DAL,29,6-10,240,None,Germany,Undrafted,Undrafted,Undrafted
+Meyers Leonard,MIA,29,7-0,260,Illinois,USA,2012,1,11
+Mfiondu Kabengele,CLE,23,6-9,250,Florida State,Canada,2019,1,27
+Michael Carter-Williams,ORL,29,6-5,190,Syracuse,USA,2013,1,11
+Michael Porter Jr.,DEN,23,6-10,218,Missouri,USA,2018,1,14
+Mikal Bridges,PHX,24,6-6,209,Villanova,USA,2018,1,10
+Mike Conley,UTA,33,6-1,175,Ohio State,USA,2007,1,4
+Mike James,BKN,30,6-1,175,Lamar,USA,Undrafted,Undrafted,Undrafted
+Mike Muscala,OKC,29,6-10,240,Bucknell,USA,2013,2,44
+Mike Scott,PHI,32,6-7,237,Virginia,USA,2012,2,43
+Miles Bridges,CHA,23,6-6,225,Michigan State,USA,2018,1,12
+Mitchell Robinson,NYK,23,7-0,240,Western Kentucky,USA,2018,2,36
+Miye Oni,UTA,23,6-5,206,Yale,USA,2019,2,58
+Mo Bamba,ORL,23,7-0,231,Texas-Austin,USA,2018,1,6
+Monte Morris,DEN,26,6-2,183,Iowa State,USA,2017,2,51
+Montrezl Harrell,LAL,27,6-7,240,Louisville,USA,2015,2,32
+Moritz Wagner,ORL,24,6-11,245,Michigan,Germany,2018,1,25
+Moses Brown,BOS,21,7-2,245,UCLA,USA,Undrafted,Undrafted,Undrafted
+Mychal Mulder,GSW,27,6-3,184,Kentucky,Canada,Undrafted,Undrafted,Undrafted
+Myles Turner,IND,25,6-11,250,Texas-Austin,USA,2015,1,11
+Naji Marshall,NOP,23,6-7,220,Xavier,USA,Undrafted,Undrafted,Undrafted
+Nassir Little,POR,21,6-5,220,North Carolina,USA,2019,1,25
+Nate Darling,CHA,22,6-6,200,Delaware,Canada,Undrafted,Undrafted,Undrafted
+Nate Hinton,DAL,22,6-5,210,Houston,USA,Undrafted,Undrafted,Undrafted
+Nathan Knight,ATL,23,6-10,253,William & Mary,USA,Undrafted,Undrafted,Undrafted
+Naz Reid,MIN,21,6-9,264,Louisiana State,USA,Undrafted,Undrafted,Undrafted
+Nemanja Bjelica,MIA,33,6-10,234,None,Serbia,2010,2,35
+Nerlens Noel,NYK,27,6-11,220,Kentucky,USA,2013,1,6
+Nic Claxton,BKN,22,6-11,215,Georgia,USA,2019,2,31
+Nick Richards,CHA,23,7-0,245,Kentucky,Jamaica,2020,2,42
+Nickeil Alexander-Walker,NOP,22,6-6,205,Virginia Tech,Canada,2019,1,17
+Nico Mannion,GSW,20,6-2,190,Arizona,Italy,2020,2,48
+Nicolas Batum,LAC,32,6-8,230,None,France,2008,1,25
+Nicolo Melli,DAL,30,6-9,236,None,Italy,Undrafted,Undrafted,Undrafted
+Nikola Jokic,DEN,26,6-11,284,None,Serbia,2014,2,41
+Nikola Vucevic,CHI,30,6-11,260,Southern California,Montenegro,2011,1,16
+Noah Vonleh,BKN,25,6-10,257,Indiana,USA,2014,1,9
+Norman Powell,POR,28,6-3,215,UCLA,USA,2015,2,46
+Norvel Pelle,NYK,28,6-10,231,Iona,USA,Undrafted,Undrafted,Undrafted
+OG Anunoby,TOR,23,6-7,232,Indiana,United Kingdo...,2017,1,23
+Obi Toppin,NYK,23,6-9,220,Dayton,USA,2020,1,8
+Onyeka Okongwu,ATL,20,6-8,235,Southern California,USA,2020,1,6
+Oshae Brissett,IND,23,6-7,210,Syracuse,Canada,Undrafted,Undrafted,Undrafted
+Otto Porter Jr.,ORL,28,6-8,198,Georgetown,USA,2013,1,3
+P.J. Dozier,DEN,24,6-6,205,South Carolina,USA,Undrafted,Undrafted,Undrafted
+P.J. Tucker,MIL,36,6-5,245,Texas-Austin,USA,2006,2,35
+P.J. Washington,CHA,22,6-7,230,Kentucky,USA,2019,1,12
+Pascal Siakam,TOR,27,6-9,230,New Mexico State,Cameroon,2016,1,27
+Pat Connaughton,MIL,28,6-5,209,Notre Dame,USA,2015,2,41
+Patrick Beverley,LAC,32,6-1,180,Arkansas,USA,2009,2,42
+Patrick McCaw,TOR,25,6-7,181,UNLV,USA,2016,2,38
+Patrick Patterson,LAC,32,6-8,235,Kentucky,USA,2010,1,14
+Patrick Williams,CHI,19,6-7,215,Florida State,USA,2020,1,4
+Patty Mills,SAS,32,6-1,180,St.Mary's College of California,Australia,2009,2,55
+Paul George,LAC,31,6-8,220,Fresno State,USA,2010,1,10
+Paul Millsap,DEN,36,6-7,257,Louisiana Tech,USA,2006,2,47
+Paul Reed,PHI,22,6-9,210,DePaul,USA,2020,2,58
+Paul Watson,TOR,26,6-6,210,Fresno State,USA,Undrafted,Undrafted,Undrafted
+Payton Pritchard,BOS,23,6-1,195,Oregon,USA,2020,1,26
+Precious Achiuwa,MIA,21,6-8,225,Memphis,Nigeria,2020,1,20
+Quinn Cook,CLE,28,6-1,180,Duke,USA,Undrafted,Undrafted,Undrafted
+Quinndary Weatherspoon,SAS,24,6-3,205,Mississippi State,USA,2019,2,49
+R.J. Hampton,ORL,20,6-4,175,None,USA,2020,1,24
+RJ Barrett,NYK,21,6-6,214,Duke,Canada,2019,1,3
+Rajon Rondo,LAC,35,6-1,180,Kentucky,USA,2006,1,21
+Raul Neto,WAS,29,6-1,180,None,Brazil,2013,2,47
+Ray Spalding,HOU,24,6-9,225,Louisville,USA,2018,2,56
+Rayjon Tucker,PHI,23,6-3,209,Arkansas-Little Rock,USA,Undrafted,Undrafted,Undrafted
+Reggie Bullock,NYK,30,6-6,205,North Carolina,USA,2013,1,25
+Reggie Jackson,LAC,31,6-2,208,Boston College,USA,2011,1,24
+Reggie Perry,BKN,21,6-8,250,Mississippi State,USA,2020,2,57
+Richaun Holmes,SAC,27,6-10,235,Bowling Green,USA,2015,2,37
+Ricky Rubio,MIN,30,6-3,190,None,Spain,2009,1,5
+Robert Covington,POR,30,6-7,209,Tennessee State,USA,Undrafted,Undrafted,Undrafted
+Robert Franks,ORL,24,6-7,225,Washington State,USA,2019,,
+Robert Williams III,BOS,23,6-8,237,Texas A&M,USA,2018,1,27
+Robert Woodard II,SAC,21,6-6,235,Mississippi State,USA,2020,2,40
+Robin Lopez,WAS,33,7-0,281,Stanford,USA,2008,1,15
+Rodions Kurucs,MIL,23,6-9,228,None,Latvia,2018,2,40
+Rodney Hood,TOR,28,6-8,208,Duke,USA,2014,1,23
+Rodney McGruder,DET,29,6-4,205,Kansas State,USA,Undrafted,Undrafted,Undrafted
+Romeo Langford,BOS,21,6-4,216,Indiana,USA,2019,1,14
+Rondae Hollis-Jefferson,POR,26,6-6,217,Arizona,USA,2015,1,23
+Royce O'Neale,UTA,28,6-4,226,Baylor,USA,Undrafted,Undrafted,Undrafted
+Rudy Gay,SAS,34,6-8,250,Connecticut,USA,2006,1,8
+Rudy Gobert,UTA,29,7-1,258,None,France,2013,1,27
+Rui Hachimura,WAS,23,6-8,230,Gonzaga,Japan,2019,1,9
+Russell Westbrook,WAS,32,6-3,200,UCLA,USA,2008,1,4
+Ryan Arcidiacono,CHI,27,6-3,195,Villanova,USA,Undrafted,Undrafted,Undrafted
+Saben Lee,DET,22,6-2,183,Vanderbilt,USA,2020,2,38
+Saddiq Bey,DET,22,6-7,215,Villanova,USA,2020,1,19
+Sam Merrill,MIL,25,6-4,205,Utah State,USA,2020,2,60
+Sean McDermott,MEM,24,6-6,195,Butler,USA,Undrafted,Undrafted,Undrafted
+Sekou Doumbouya,DET,20,6-8,230,None,France,2019,1,15
+Semi Ojeleye,BOS,26,6-6,240,Southern Methodist,USA,2017,2,37
+Serge Ibaka,LAC,31,6-10,235,None,Republic of t...,2008,1,24
+Seth Curry,PHI,30,6-2,185,Duke,USA,Undrafted,Undrafted,Undrafted
+Shai Gilgeous-Alexander,OKC,22,6-6,180,Kentucky,Canada,2018,1,11
+Shake Milton,PHI,24,6-5,205,Southern Methodist,USA,2018,2,54
+Shaquille Harrison,DEN,27,6-7,190,Tulsa,USA,Undrafted,Undrafted,Undrafted
+Sindarius Thornwell,ORL,26,6-4,215,South Carolina,USA,2017,2,48
+Skylar Mays,ATL,23,6-4,205,Louisiana State,USA,2020,2,50
+Solomon Hill,ATL,30,6-6,226,Arizona,USA,2013,1,23
+Spencer Dinwiddie,BKN,28,6-5,215,Colorado,USA,2014,2,38
+Stanley Johnson,TOR,25,6-6,242,Arizona,USA,2015,1,8
+Stephen Curry,GSW,33,6-3,185,Davidson,USA,2009,1,7
+Sterling Brown,HOU,26,6-5,219,Southern Methodist,USA,2017,2,46
+Steven Adams,NOP,27,6-11,265,Pittsburgh,New Zealand,2013,1,12
+Svi Mykhailiuk,OKC,24,6-7,205,Kansas,Ukraine,2018,2,47
+T.J. Leaf,POR,24,6-10,222,UCLA,USA,2017,1,18
+T.J. McConnell,IND,29,6-1,190,Arizona,USA,2015,0,
+T.J. Warren,IND,27,6-8,220,North Carolina State,USA,2014,1,14
+Tacko Fall,BOS,25,7-5,311,Central Florida,Senegal,Undrafted,Undrafted,Undrafted
+Taj Gibson,NYK,36,6-9,232,Southern California,USA,2009,1,26
+Talen Horton-Tucker,LAL,20,6-4,234,Iowa State,USA,2019,2,46
+Taurean Prince,CLE,27,6-7,218,Baylor,USA,2016,1,12
+Terance Mann,LAC,24,6-5,215,Florida State,USA,2019,2,48
+Terence Davis,SAC,24,6-4,201,Mississippi,USA,Undrafted,Undrafted,Undrafted
+Terrance Ferguson,PHI,23,6-6,190,None,USA,2017,1,21
+Terrence Ross,ORL,30,6-6,206,Washington,USA,2012,1,8
+Terry Rozier,CHA,27,6-1,190,Louisville,USA,2015,1,16
+Thaddeus Young,CHI,33,6-8,235,Georgia Tech,USA,2007,1,12
+Thanasis Antetokounmpo,MIL,28,6-6,219,None,Greece,2014,2,51
+Theo Maledon,OKC,20,6-4,175,None,France,2020,2,34
+Theo Pinson,NYK,25,6-5,212,North Carolina,USA,Undrafted,Undrafted,Undrafted
+Thomas Bryant,WAS,23,6-10,248,Indiana,USA,2017,2,42
+Thon Maker,CLE,24,7-0,221,None,South Sudan,2016,1,10
+Tim Frazier,MEM,30,6-0,170,Penn State,USA,Undrafted,Undrafted,Undrafted
+Tim Hardaway Jr.,DAL,29,6-5,205,Michigan,USA,2013,1,24
+Timothe Luwawu-Cabarrot,BKN,26,6-7,220,None,France,2016,1,24
+Tobias Harris,PHI,28,6-8,226,Tennessee,USA,2011,1,19
+Tomas Satoransky,CHI,29,6-7,210,None,Czech Republi...,2012,2,32
+Tony Bradley,OKC,23,6-10,248,North Carolina,USA,2017,1,28
+Tony Snell,ATL,29,6-6,213,New Mexico,USA,2013,1,20
+Torrey Craig,PHX,30,6-7,221,South Carolina Upstate,USA,Undrafted,Undrafted,Undrafted
+Trae Young,ATL,22,6-1,180,Oklahoma,USA,2018,1,5
+Tre Jones,SAS,21,6-1,185,Duke,USA,2020,2,41
+Tremont Waters,BOS,23,5-10,175,Louisiana State,USA,2019,2,51
+Trent Forrest,UTA,23,6-4,210,Florida State,USA,Undrafted,Undrafted,Undrafted
+Trevor Ariza,MIA,36,6-8,215,UCLA,USA,2004,2,43
+Trey Burke,DAL,28,6-0,185,Michigan,USA,2013,1,9
+Trey Lyles,SAS,25,6-9,234,Kentucky,Canada,2015,1,12
+Tristan Thompson,BOS,30,6-9,254,Texas-Austin,Canada,2011,1,4
+Troy Brown Jr.,CHI,21,6-6,215,Oregon,USA,2018,1,15
+Ty Jerome,OKC,23,6-5,195,Virginia,USA,2019,1,24
+Ty-Shon Alexander,PHX,22,6-3,195,Creighton,USA,Undrafted,Undrafted,Undrafted
+Tyler Bey,DAL,23,6-7,215,Colorado,USA,2020,2,36
+Tyler Cook,DET,23,6-8,255,Iowa,USA,Undrafted,Undrafted,Undrafted
+Tyler Herro,MIA,21,6-5,195,Kentucky,USA,2019,1,13
+Tyler Johnson,BKN,29,6-3,186,Fresno State,USA,Undrafted,Undrafted,Undrafted
+Tyrell Terry,DAL,20,6-2,160,Stanford,USA,2020,2,31
+Tyrese Haliburton,SAC,21,6-5,185,Iowa State,USA,2020,1,12
+Tyrese Maxey,PHI,20,6-2,200,Kentucky,USA,2020,1,21
+Tyus Jones,MEM,25,6-0,196,Duke,USA,2015,1,24
+Udoka Azubuike,UTA,21,6-10,280,Kansas,Nigeria,2020,1,27
+Udonis Haslem,MIA,41,6-8,235,Florida,USA,Undrafted,Undrafted,Undrafted
+Vernon Carey Jr.,CHA,20,6-9,270,Duke,USA,2020,2,32
+Victor Oladipo,MIA,29,6-4,213,Indiana,USA,2013,1,2
+Vincent Poirier,PHI,27,7-0,235,None,France,Undrafted,Undrafted,Undrafted
+Vlatko Cancar,DEN,24,6-8,236,None,Slovenia,2017,2,49
+Wayne Ellington,DET,33,6-4,207,North Carolina,USA,2009,1,28
+Wendell Carter Jr.,ORL,22,6-10,270,Duke,USA,2018,1,7
+Wenyen Gabriel,NOP,24,6-9,205,Kentucky,South Sudan,Undrafted,Undrafted,Undrafted
+Wes Iwundu,NOP,26,6-6,195,Kansas State,USA,2017,2,33
+Wesley Matthews,LAL,34,6-4,220,Marquette,USA,Undrafted,Undrafted,Undrafted
+Will Barton,DEN,30,6-6,181,Memphis,USA,2012,2,40
+Will Magnay,NOP,23,6-10,234,None,Australia,Undrafted,Undrafted,Undrafted
+Willie Cauley-Stein,DAL,27,7-0,240,Kentucky,USA,2015,1,6
+Willy Hernangomez,NOP,27,6-11,250,None,Spain,2015,2,35
+Xavier Tillman,MEM,22,6-8,245,Michigan State,USA,2020,2,35
+Yogi Ferrell,LAC,28,6-0,178,Indiana,USA,Undrafted,Undrafted,Undrafted
+Yuta Watanabe,TOR,26,6-9,215,George Washington,Japan,Undrafted,Undrafted,Undrafted
+Zach LaVine,CHI,26,6-5,200,UCLA,USA,2014,1,13
+Zeke Nnaji,DEN,20,6-9,240,Arizona,USA,2020,1,22
+Zion Williamson,NOP,20,6-7,284,Duke,USA,2019,1,1

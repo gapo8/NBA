@@ -11,16 +11,18 @@ import csv
 conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, password=auth.password)
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 
+##################################################################################################################################################
+#IGRALCI STATISTIKA
 
 def ustvari_tabelo_igralci21_22():
     cur.execute("""
         CREATE TABLE igralci21_22 (
             igralec TEXT PRIMARY KEY UNIQUE,
             klub TEXT NOT NULL,
-            starost NUMERIC NOT NULL,
-            odigrane_tekme NUMERIC NOT NULL,
-            zmage NUMERIC NOT NULL,
-            porazi NUMERIC NOT NULL,
+            starost INTEGER NOT NULL,
+            odigrane_tekme INTEGER  NOT NULL,
+            zmage INTEGER NOT NULL,
+            porazi INTEGER NOT NULL,
             minute NUMERIC NOT NULL,
             točke NUMERIC NOT NULL,
             skoki NUMERIC NOT NULL,
@@ -51,9 +53,9 @@ def uvozi_podatke_igralci21_22():
                 """, r)
     conn.commit()
 
-#pobrisi_tabelo_igralci21_22()
-#ustvari_tabelo_igralci21_22()
-#uvozi_podatke_igralci21_22()
+pobrisi_tabelo_igralci21_22()
+ustvari_tabelo_igralci21_22()
+uvozi_podatke_igralci21_22()
 ##############################################################################################################################################
 
 def ustvari_tabelo_igralci20_21():
@@ -61,10 +63,10 @@ def ustvari_tabelo_igralci20_21():
         CREATE TABLE igralci20_21 (
             igralec TEXT PRIMARY KEY UNIQUE,
             klub TEXT NOT NULL,
-            starost NUMERIC NOT NULL,
-            odigrane_tekme NUMERIC NOT NULL,
-            zmage NUMERIC NOT NULL,
-            porazi NUMERIC NOT NULL,
+            starost INTEGER NOT NULL,
+            odigrane_tekme INTEGER NOT NULL,
+            zmage INTEGER NOT NULL,
+            porazi INTEGER NOT NULL,
             minute NUMERIC NOT NULL,
             točke NUMERIC NOT NULL,
             skoki NUMERIC NOT NULL,
@@ -95,9 +97,9 @@ def uvozi_podatke_igralci20_21():
                 """, r)
     conn.commit()
 
-#pobrisi_tabelo_igralci20_21()
-#ustvari_tabelo_igralci20_21()
-#uvozi_podatke_igralci20_21()
+pobrisi_tabelo_igralci20_21()
+ustvari_tabelo_igralci20_21()
+uvozi_podatke_igralci20_21()
 
 ##############################################################################################################################################
 
@@ -106,10 +108,10 @@ def ustvari_tabelo_igralci19_20():
         CREATE TABLE igralci19_20 (
             igralec TEXT PRIMARY KEY UNIQUE,
             klub TEXT NOT NULL,
-            starost NUMERIC NOT NULL,
-            odigrane_tekme NUMERIC NOT NULL,
-            zmage NUMERIC NOT NULL,
-            porazi NUMERIC NOT NULL,
+            starost INTEGER NOT NULL,
+            odigrane_tekme INTEGER NOT NULL,
+            zmage INTEGER NOT NULL,
+            porazi INTEGER NOT NULL,
             minute NUMERIC NOT NULL,
             točke NUMERIC NOT NULL,
             skoki NUMERIC NOT NULL,
@@ -140,7 +142,12 @@ def uvozi_podatke_igralci19_20():
                 """, r)
     conn.commit()
 
-#pobrisi_tabelo_igralci19_20()
-#ustvari_tabelo_igralci19_20()
+pobrisi_tabelo_igralci19_20()
+ustvari_tabelo_igralci19_20()
 uvozi_podatke_igralci19_20()
+
+#############################################################################################################################################
+
+
+
 
