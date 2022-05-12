@@ -17,9 +17,9 @@ cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 def ustvari_tabelo_lastniki():
     cur.execute("""
         CREATE TABLE lastniki (
-            ekipa TEXT PRIMARY KEY UNIQUE,
+            ekipa TEXT REFERENCES ekipe_osnovni_podatki(ekipa),
             ime_ekipe TEXT NOT NULL,
-            lastniki TEXT NOT NULL,
+            lastniki TEXT PRIMARY KEY NOT NULL,
             upravljalska_entiteta TEXT NOT NULL,
             nakupna_cena TEXT NOT NULL,
             leto_nakupa INTEGER NOT NULL

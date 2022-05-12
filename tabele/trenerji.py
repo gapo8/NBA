@@ -36,7 +36,7 @@ def pobrisi_tabelo_trenerji():
     conn.commit()
 
 def uvozi_podatke_trenerji():
-    with open("podatki/trenerji.csv", encoding='utf8',errors='ignore') as f:
+    with open("podatki/trenerji21_22.csv", encoding='utf8',errors='ignore') as f:
         rd = csv.reader(f)
         next(rd) # izpusti naslovno vrstico
         for r in rd:
@@ -47,6 +47,15 @@ def uvozi_podatke_trenerji():
                 """, r)
     conn.commit()
 
+
+def spremeni_tabelo_trenerji():
+    cur.execute("""
+        ALTER TABLE trenerji
+        DROP COLUMN ime_ekipe;
+    """)
+    conn.commit()
+
 pobrisi_tabelo_trenerji()
 ustvari_tabelo_trenerji()
 uvozi_podatke_trenerji()
+spremeni_tabelo_trenerji()
