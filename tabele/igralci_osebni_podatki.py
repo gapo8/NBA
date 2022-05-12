@@ -50,7 +50,15 @@ def uvozi_podatke_igralci_osebni21_22():
                 """, r)
     conn.commit()
 
-pobrisi_tabelo_igralci_osebni21_22()
+
+
+def dopolni_tabelo_igralci_osebni21_22():
+    cur.execute("""
+        
+    """)
+    conn.commit()
+
+#pobrisi_tabelo_igralci_osebni21_22()
 ustvari_tabelo_igralci_osebni21_22()
 uvozi_podatke_igralci_osebni21_22()
 ##############################################################################################################################################
@@ -92,9 +100,17 @@ def uvozi_podatke_igralci_osebni20_21():
                 """, r)
     conn.commit()
 
-pobrisi_tabelo_igralci_osebni20_21()
+def popravi_podatke_igralci_osebni20_21():
+    cur.execute("""
+                UPDATE igralci_osebni20_21
+                SET starost = starost + 1
+                """)
+    conn.commit()
+
+#pobrisi_tabelo_igralci_osebni20_21()
 ustvari_tabelo_igralci_osebni20_21()
 uvozi_podatke_igralci_osebni20_21()
+popravi_podatke_igralci_osebni20_21()
 ##############################################################################################################################################
 
 
@@ -134,16 +150,25 @@ def uvozi_podatke_igralci_osebni19_20():
                 """, r)
     conn.commit()
 
-pobrisi_tabelo_igralci_osebni19_20()
+
+def popravi_podatke_igralci_osebni19_20():
+    cur.execute("""
+                UPDATE igralci_osebni19_20
+                SET starost = starost + 2
+                """)
+    conn.commit()
+
+#pobrisi_tabelo_igralci_osebni19_20()
 ustvari_tabelo_igralci_osebni19_20()
 uvozi_podatke_igralci_osebni19_20()
+popravi_podatke_igralci_osebni19_20()
 ##############################################################################################################################################
 
 def ustvari_tabelo_igralci_vsi():
     cur.execute("""
         CREATE TABLE igralci_vsi (
             igralec TEXT PRIMARY KEY UNIQUE,
-            klub TEXT NOT NULL,
+            klub TEXT REFERENCES ekipe_osnovni_podatki(ekipa) NOT NULL,
             starost INTEGER NOT NULL,
             višina TEXT  NOT NULL,
             teža INTEGER NOT NULL,
@@ -163,9 +188,43 @@ def pobrisi_tabelo_igralci_vsi():
     """)
     conn.commit()
 
+
 def uvozi_podatke_igralci_vsi():
+    with open("podatki/osebni_podatki21_22.csv", encoding='utf8',errors='ignore') as f:
+        rd = csv.reader(f)
+        next(rd) # izpusti naslovno vrstico
+        for r in rd:
+            cur.execute("""
+                INSERT INTO igralci_vsi
+                (igralec,klub,starost,višina, teža, univerza, država, leto_nabora, krog_nabora, številka_nabora)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """, r)
+            conn.commit()
+
+
+
+def popravi_tabelo_igralci_vsi():
     cur.execute("""
-       INSERT INTO igralci_vsi
-    (igralec,klub,starost,višina, teža, univerza, država, leto_nabora, krog_nabora, številka_nabora)
-    """)
+                INSERT INTO igralci_vsi
+                (igralec,klub,starost,višina, teža, univerza, država, leto_nabora, krog_nabora, številka_nabora)
+                SELECT DISTINCT igralec,klub,starost,višina, teža, univerza, država, leto_nabora, krog_nabora, številka_nabora
+                FROM igralci_osebni20_21
+                WHERE igralec NOT IN (SELECT igralec FROM igralci_vsi);
+                """)
     conn.commit()
+    cur.execute("""
+                INSERT INTO igralci_vsi
+                (igralec,klub,starost,višina, teža, univerza, država, leto_nabora, krog_nabora, številka_nabora)
+                SELECT DISTINCT igralec,klub,starost,višina, teža, univerza, država, leto_nabora, krog_nabora, številka_nabora
+                FROM igralci_osebni19_20
+                WHERE igralec NOT IN (SELECT igralec FROM igralci_vsi);
+                """)
+    conn.commit()
+
+pobrisi_tabelo_igralci_vsi()
+ustvari_tabelo_igralci_vsi()
+uvozi_podatke_igralci_vsi()
+popravi_tabelo_igralci_vsi()
+pobrisi_tabelo_igralci_osebni19_20()
+pobrisi_tabelo_igralci_osebni20_21()
+pobrisi_tabelo_igralci_osebni21_22()

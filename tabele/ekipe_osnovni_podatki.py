@@ -32,7 +32,7 @@ def ustvari_tabelo_ekipe_osnovni_podatki():
 
 def pobrisi_tabelo_ekipe_osnovni_podatki():
     cur.execute("""
-        DROP TABLE ekipe_osnovni_podatki;
+        DROP TABLE ekipe_osnovni_podatki CASCADE;
     """)
     conn.commit()
 
@@ -48,6 +48,6 @@ def uvozi_podatke_ekipe_osnovni_podatki():
                 """, r)
     conn.commit()
 
-pobrisi_tabelo_ekipe_osnovni_podatki()
-ustvari_tabelo_ekipe_osnovni_podatki()
+#pobrisi_tabelo_ekipe_osnovni_podatki()
+#ustvari_tabelo_ekipe_osnovni_podatki()
 uvozi_podatke_ekipe_osnovni_podatki()
