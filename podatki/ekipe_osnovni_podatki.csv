@@ -1,0 +1,31 @@
+ID,Team,Location,Arena,Capacity,Founded,Conference,Division
+ATL,Atlanta Hawks,"Atlanta, Georgia",State Farm Arena,"16,600",1946,Vzhod,Jugovzhodna
+BOS,Boston Celtics,"Boston, Massachusetts",TD Garden,"19,156",1946,Vzhod,Atlantska
+BKN,Brooklyn Nets,"New York City, New York",Barclays Center,"17,732",1967,Vzhod,Atlantska
+CHA,Charlotte Hornets,"Charlotte, North Carolina",Spectrum Center,"19,077",1988,Vzhod,Jugovzhodna
+CHI,Chicago Bulls,"Chicago, Illinois",United Center,"20,917",1966,Vzhod,Centralna
+CLE,Cleveland Cavaliers,"Cleveland, Ohio",Rocket Mortgage FieldHouse,"19,432",1970,Vzhod,Centralna
+DAL,Dallas Mavericks,"Dallas, Texas",American Airlines Center,"19,200",1980,Zahod,Jugozahodna
+DEN,Denver Nuggets,"Denver, Colorado",Ball Arena,"19,520",1967,Zahod,Severozahodna
+DET,Detroit Pistons,"Detroit, Michigan",Little Caesars Arena,"20,332",1941,Vzhod,Centralna
+GSW,Golden State Warriors,"San Francisco, California",Chase Center,"18,064",1946,Zahod,Pacifiška
+HOU,Houston Rockets,"Houston, Texas",Toyota Center,"18,055",1967,Zahod,Jugozahodna
+IND,Indiana Pacers,"Indianapolis, Indiana",Gainbridge Fieldhouse,"17,923",1967,Vzhod,Centralna
+LAC,Los Angeles Clippers,"Los Angeles, California",Crypto.com Arena,"19,079",1970,Zahod,Pacifiška
+LAL,Los Angeles Lakers,"Los Angeles, California",Crypto.com Arena,"19,079",1947,Zahod,Pacifiška
+MEM,Memphis Grizzlies,"Memphis, Tennessee",FedExForum,"18,119",1995,Zahod,Jugozahodna
+MIA,Miami Heat,"Miami, Florida",FTX Arena,"19,600",1988,Vzhod,Jugovzhodna
+MIL,Milwaukee Bucks,"Milwaukee, Wisconsin",Fiserv Forum,"17,341",1968,Vzhod,Centralna
+MIN,Minnesota Timberwolves,"Minneapolis, Minnesota",Target Center,"18,798",1989,Zahod,Severozahodna
+NOP,New Orleans Pelicans,"New Orleans, Louisiana",Smoothie King Center,"16,867",2002,Zahod,Jugozahodna
+NYK,New York Knicks,"New York City, New York",Madison Square Garden,"19,812",1946,Vzhod,Atlantska
+OKC,Oklahoma City Thunder,"Oklahoma City, Oklahoma",Paycom Center,"18,203",1967,Zahod,Severozahodna
+ORL,Orlando Magic,"Orlando, Florida",Amway Center,"18,846",1989,Vzhod,Jugovzhodna
+PHI,Philadelphia 76ers,"Philadelphia, Pennsylvania",Wells Fargo Center,"20,478",1946,Vzhod,Atlantska
+PHX,Phoenix Suns,"Phoenix, Arizona",Footprint Center,"16,645",1968,Zahod,Pacifiška
+POR,Portland Trail Blazers,"Portland, Oregon",Moda Center,"19,393",1970,Zahod,Severozahodna
+SAC,Sacramento Kings,"Sacramento, California",Golden 1 Center,"17,608",1923,Zahod,Pacifiška
+SAS,San Antonio Spurs,"San Antonio, Texas",AT&T Center,"18,418",1967,Zahod,Jugozahodna
+TOR,Toronto Raptors,"Toronto, Ontario",Scotiabank Arena,"19,800",1995,Vzhod,Atlantska
+UTA,Utah Jazz,"Salt Lake City, Utah",Vivint Arena,"18,306",1974,Zahod,Severozahodna
+WAS,Washington Wizards,"Washington, D.C.",Capital One Arena,"20,356",1961,Vzhod,Jugovzhodna
