@@ -13,54 +13,6 @@ cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
 ##################################################################################################################################################
 #IGRALCI OSEBNI PODATKI
-
-def ustvari_tabelo_igralci_osebni21_22():
-    cur.execute("""
-        CREATE TABLE igralci_osebni21_22 (
-            igralec TEXT PRIMARY KEY UNIQUE,
-            klub TEXT NOT NULL,
-            starost INTEGER NOT NULL,
-            višina TEXT  NOT NULL,
-            teža INTEGER NOT NULL,
-            univerza TEXT,
-            država TEXT NOT NULL,
-            leto_nabora TEXT NOT NULL,
-            krog_nabora TEXT NOT NULL,
-            številka_nabora TEXT NOT NULL
-            
-            );
-    """)
-    conn.commit()
-
-def pobrisi_tabelo_igralci_osebni21_22():
-    cur.execute("""
-        DROP TABLE igralci_osebni21_22;
-    """)
-    conn.commit()
-
-def uvozi_podatke_igralci_osebni21_22():
-    with open("podatki/osebni_podatki21_22.csv", encoding='utf8',errors='ignore') as f:
-        rd = csv.reader(f)
-        next(rd) # izpusti naslovno vrstico
-        for r in rd:
-            cur.execute("""
-                INSERT INTO igralci_osebni21_22
-                (igralec,klub,starost,višina, teža, univerza, država, leto_nabora, krog_nabora, številka_nabora)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                """, r)
-    conn.commit()
-
-
-
-def dopolni_tabelo_igralci_osebni21_22():
-    cur.execute("""
-        
-    """)
-    conn.commit()
-
-#pobrisi_tabelo_igralci_osebni21_22()
-ustvari_tabelo_igralci_osebni21_22()
-uvozi_podatke_igralci_osebni21_22()
 ##############################################################################################################################################
 
 
@@ -108,9 +60,9 @@ def popravi_podatke_igralci_osebni20_21():
     conn.commit()
 
 #pobrisi_tabelo_igralci_osebni20_21()
-ustvari_tabelo_igralci_osebni20_21()
-uvozi_podatke_igralci_osebni20_21()
-popravi_podatke_igralci_osebni20_21()
+#ustvari_tabelo_igralci_osebni20_21()
+#uvozi_podatke_igralci_osebni20_21()
+#popravi_podatke_igralci_osebni20_21()
 ##############################################################################################################################################
 
 
@@ -159,9 +111,9 @@ def popravi_podatke_igralci_osebni19_20():
     conn.commit()
 
 #pobrisi_tabelo_igralci_osebni19_20()
-ustvari_tabelo_igralci_osebni19_20()
-uvozi_podatke_igralci_osebni19_20()
-popravi_podatke_igralci_osebni19_20()
+#ustvari_tabelo_igralci_osebni19_20()
+#uvozi_podatke_igralci_osebni19_20()
+#popravi_podatke_igralci_osebni19_20()
 ##############################################################################################################################################
 
 def ustvari_tabelo_igralci_vsi():
@@ -221,10 +173,20 @@ def popravi_tabelo_igralci_vsi():
                 """)
     conn.commit()
 
-pobrisi_tabelo_igralci_vsi()
-ustvari_tabelo_igralci_vsi()
-uvozi_podatke_igralci_vsi()
-popravi_tabelo_igralci_vsi()
-pobrisi_tabelo_igralci_osebni19_20()
-pobrisi_tabelo_igralci_osebni20_21()
-pobrisi_tabelo_igralci_osebni21_22()
+def pobrisi_stolpec_igralci_vsi():
+    cur.execute("""
+        ALTER TABLE igralci_vsi
+        DROP COLUMN klub;
+    """)
+    conn.commit()
+
+
+
+#pobrisi_tabelo_igralci_vsi()
+#ustvari_tabelo_igralci_vsi()
+#uvozi_podatke_igralci_vsi()
+#popravi_tabelo_igralci_vsi()
+pobrisi_stolpec_igralci_vsi()
+#pobrisi_tabelo_igralci_osebni19_20()
+#pobrisi_tabelo_igralci_osebni20_21()
+#pobrisi_tabelo_igralci_osebni21_22()

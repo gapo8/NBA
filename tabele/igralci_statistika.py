@@ -17,8 +17,8 @@ cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 def ustvari_tabelo_igralci21_22():
     cur.execute("""
         CREATE TABLE igralci21_22 (
-            igralec TEXT PRIMARY KEY UNIQUE,
-            klub TEXT NOT NULL,
+            igralec TEXT REFERENCES igralci_vsi(igralec) NOT NULL,
+            klub TEXT REFERENCES ekipe_osnovni_podatki(ekipa) NOT NULL,
             starost INTEGER NOT NULL,
             odigrane_tekme INTEGER  NOT NULL,
             zmage INTEGER NOT NULL,
@@ -61,8 +61,8 @@ uvozi_podatke_igralci21_22()
 def ustvari_tabelo_igralci20_21():
     cur.execute("""
         CREATE TABLE igralci20_21 (
-            igralec TEXT PRIMARY KEY UNIQUE,
-            klub TEXT NOT NULL,
+            igralec TEXT REFERENCES igralci_vsi(igralec) NOT NULL,
+            klub TEXT REFERENCES ekipe_osnovni_podatki(ekipa) NOT NULL,
             starost INTEGER NOT NULL,
             odigrane_tekme INTEGER NOT NULL,
             zmage INTEGER NOT NULL,
@@ -106,8 +106,8 @@ uvozi_podatke_igralci20_21()
 def ustvari_tabelo_igralci19_20():
     cur.execute("""
         CREATE TABLE igralci19_20 (
-            igralec TEXT PRIMARY KEY UNIQUE,
-            klub TEXT NOT NULL,
+            igralec TEXT REFERENCES igralci_vsi(igralec) NOT NULL,
+            klub TEXT REFERENCES ekipe_osnovni_podatki(ekipa) NOT NULL,
             starost INTEGER NOT NULL,
             odigrane_tekme INTEGER NOT NULL,
             zmage INTEGER NOT NULL,
