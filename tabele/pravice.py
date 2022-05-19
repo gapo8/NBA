@@ -16,12 +16,12 @@ cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
 def podeli_pravice():
     cur.execute("""
-        GRANT ALL ON DATABASE sem2022_gasperp TO tinem WITH GRANT OPTION;
-        GRANT ALL ON SCHEMA public TO tinem WITH GRANT OPTION;
+        GRANT ALL ON DATABASE sem2022_gasperp TO tinema WITH GRANT OPTION;
+        GRANT ALL ON SCHEMA public TO tinema WITH GRANT OPTION;
         GRANT CONNECT ON DATABASE sem2022_gasperp TO javnost;
         GRANT USAGE ON SCHEMA public TO javnost;
-        GRANT ALL ON ALL TABLES IN SCHEMA public TO tinem WITH GRANT OPTION;
-        GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO tinem WITH GRANT OPTION;
+        GRANT ALL ON ALL TABLES IN SCHEMA public TO tinema WITH GRANT OPTION;
+        GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO tinema WITH GRANT OPTION;
         GRANT SELECT ON ALL TABLES IN SCHEMA public TO javnost WITH GRANT OPTION;
     """)
     conn.commit()
