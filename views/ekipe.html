@@ -1,0 +1,31 @@
+%rebase('osnova.html', naslov='NBA Ekipe')
+
+  <table cellpadding="0" cellspacing="0" border="1">
+  <tr>
+     <th>Ekipa</th>
+     <th>Ime ekipe</th>
+     <th>Lokacija</th>
+     <th>Dvorana</th>
+     <th>Kapaciteta</th>
+     <th>Ustanovitev</th>
+     <th>Konferenca</th>
+     <th>Divizija</th>
+  </tr>
+  %for (ekipa, ime, lokacija, dvorana, kapaciteta, ustanovitev, konferenca, divizija) in ekipe_osnovni_podatki:
+    <tr>
+       <td>{{ekipa}}</td>
+       <td>{{ime}}</td>
+       <td>{{lokacija}}</td>
+       <td>{{dvorana}}</td>
+       <td>{{kapaciteta}}</td>
+       <td>{{ustanovitev}}</td>
+       <td>{{konferenca}}</td>
+       <td>{{divizija}}</td>
+    </tr>
+  %end
+  </table>
+
+  <p>
+  <a href='/prijava/'>Prijava</a>
+  <a href='/igralci/'>Igralci</a>
+  </p>
