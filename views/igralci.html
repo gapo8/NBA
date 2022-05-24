@@ -1,0 +1,44 @@
+%rebase('osnova.html', naslov='Osnovni podtaki o igralcih v letih 2020-2022')
+
+
+
+<div>
+  Igralec: <input id="isci_igralec" type="text" oninput="isci_igralec()" />
+  Starost: <input id="isci_starost" type="text" oninput="isci_starost()" />
+  
+</div>
+
+  <table id="igralci" cellpadding="0" cellspacing="0" border="1">
+  <tr>
+     <th>Ime in priimek</th>
+     <th>Starost</th>
+     <th>Višina</th>
+     <th>Teža</th>
+     <th>Univerza</th>
+     <th>Država</th>
+     <th>Leto nabora</th>
+     <th>Krog nabora</th>
+     <th>Številka nabora</th>
+  </tr>
+  %for (igralec, starost, višina, teža, univerza, država, leto_nabora, krog_nabora, številka_nabora) in igralci_vsi:
+    <tr>
+       <td>{{igralec}}</td>
+       <td>{{starost}}</td>
+       <td>{{višina}}</td>
+       <td>{{teža}}</td>
+       <td>{{univerza}}</td>
+       <td>{{država}}</td>
+       <td>{{leto_nabora}}</td>
+       <td>{{krog_nabora}}</td>
+       <td>{{številka_nabora}}</td>
+    </tr>
+  %end
+  </table>
+
+  <p>
+    <a href='/prijava/'>Prijava</a>
+    <a href='/'>Domov</a>
+  </p>
+
+
+

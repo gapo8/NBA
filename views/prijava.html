@@ -1,20 +1,29 @@
-<html>
-    <body style="background-color: rgb(121, 196, 8)">
-    <div align="center">
 
-        <h1>Prijava</h1>
-        
+% rebase('osnova.html', naslov='Prijava')
 
-       
-
-        <form method="post">
-            Ime: <input type="text" name="kolicina"> &ensp;
-            Priimek: <input type="text" name="stara_enota"> &ensp;
-            
-            <button type="submit">Prijava</button>
-        </form>
-        
-    
+<form action="/prijava/" method="post" autocomplete="off">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="uporabnisko_ime">Uporabniško ime</label>
+        <input id="uporabnisko_ime" name="uporabnisko_ime" type="text" class="form-control" required
+          oninput="this.setCustomValidity('')"
+          oninvalid="this.setCustomValidity('Obvezno polje')"
+          />
+      </div>
     </div>
-    </body>
-</html>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="geslo">Geslo</label>
+        <input id="geslo" name="geslo" type="password" class="form-control" required
+          oninput="this.setCustomValidity('')"
+          oninvalid="this.setCustomValidity('Obvezno polje')"
+          />
+      </div>
+    </div>
+    <div class="form-row col">
+      <button class="btn btn-primary" type="submit">
+        Prijava
+      </button>
+    </div>
+  
+  </form>
