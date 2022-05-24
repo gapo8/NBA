@@ -1,0 +1,59 @@
+%rebase('osnova.html', naslov='Statistika igralcev za sezono 2019/2020')
+
+<div>
+  Statistični podatki igralcev:
+<p>
+  <a href='/igralci_statistika_20_21/'><button>2020-2021</button></a>
+  <a href='/igralci_statistika_21_22/'><button>2021-2022</button></a> 
+</p>
+</div>
+
+<div>
+<p>
+<a href='/igralci/'><button>Nazaj</button></a>
+<a href='/'><button>Domov</button></a>
+</p>
+</div>
+
+
+<div>
+  Igralec: <input id="isci_igralec" type="text" oninput="isci_igralec()" />
+  Točke: <input id="isci_tocke" type="text" oninput="isci_tocke()" />
+  
+</div>
+
+  <table id="igralci" cellpadding="0" cellspacing="0" border="1">
+  <tr>
+     <th>Ime in priimek</th>
+     <th>Klub</th>
+     <th>Število odigranih tekem</th>
+     <th>Minute</th>
+     <th>Točke</th>
+     <th>Skoki</th>
+     <th>Podaje</th>
+     <th>Izgubljene žoge</th>
+     <th>Ukradene žoge</th>
+     <td>Blokade</td>
+     <td>+/-</td>
+  </tr>
+  %for (igralec, klub, odigrane_tekme, minute, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri) in igralci19_20:
+    <tr>
+       <td>{{igralec}}</td>
+       <td>{{klub}}</td>
+       <td>{{odigrane_tekme}}</td>
+       <td>{{minute}}</td>
+       <td>{{točke}}</td>
+       <td>{{skoki}}</td>
+       <td>{{podaje}}</td>
+       <td>{{izgubljene_žoge}}</td>
+       <td>{{ukradene_žoge}}</td>
+       <td>{{blokade}}</td>
+       <td>{{razlika_ob_igri}}</td>
+    </tr>
+  %end
+  </table>
+
+  
+  
+
+

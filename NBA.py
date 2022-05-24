@@ -150,16 +150,62 @@ def odjava_get():
 #################################################################################################################################################
 #TABELE
 #################################################################################################################################################
+
+
+#################################################################################################################################################
+#Igralci
+
 @get('/igralci/')
 def igralci_get():
     cur.execute("SELECT * FROM igralci_vsi ORDER BY igralec")
     return template('igralci.html', igralci_vsi=cur)
 
+@get('/igralci_statistika_19_20/')
+def igralci_statistika_19_20_get():
+    cur.execute("SELECT igralec, klub, odigrane_tekme, minute, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri FROM igralci19_20 ORDER BY igralec")
+    return template('igralci19_20.html', igralci19_20=cur)
+
+@get('/igralci_statistika_20_21/')
+def igralci_statistika_20_21_get():
+    cur.execute("SELECT igralec, klub, odigrane_tekme, minute, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri FROM igralci20_21 ORDER BY igralec")
+    return template('igralci20_21.html', igralci20_21=cur)
+
+@get('/igralci_statistika_21_22/')
+def igralci_statistika_21_22_get():
+    cur.execute("SELECT igralec, klub, odigrane_tekme, minute, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri FROM igralci21_22 ORDER BY igralec")
+    return template('igralci21_22.html', igralci21_22=cur)
+
+
+#################################################################################################################################################
+#Ekipe
 
 @get('/ekipe/')
 def ekipe_get():
     cur.execute("SELECT * FROM ekipe_osnovni_podatki ORDER BY ime")
     return template('ekipe.html', ekipe_osnovni_podatki=cur)
+
+
+@get('/ekipe_statistika_19_20/')
+def ekipe_statistika_19_20_get():
+    cur.execute("SELECT ekipa, ime, odigrane_tekme, zmage, porazi, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri FROM ekipe19_20 ORDER BY ekipa")
+    return template('ekipe19_20.html', ekipe19_20=cur)
+
+
+@get('/ekipe_statistika_20_21/')
+def ekipe_statistika_20_21_get():
+    cur.execute("SELECT ekipa, ime, odigrane_tekme, zmage, porazi, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri FROM ekipe20_21 ORDER BY ekipa")
+    return template('ekipe20_21.html', ekipe20_21=cur)
+
+
+@get('/ekipe_statistika_21_22/')
+def ekipe_statistika_21_22_get():
+    cur.execute("SELECT ekipa, ime, odigrane_tekme, zmage, porazi, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri FROM ekipe21_22 ORDER BY ekipa")
+    return template('ekipe21_22.html', ekipe21_22=cur)
+
+
+
+
+
 
 
 @get('/osebe/')

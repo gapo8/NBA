@@ -1,0 +1,57 @@
+%rebase('osnova.html', naslov='Statistika klubov za sezono 2020/2021')
+
+<div>
+  Statistični podatki klubov:
+<p>
+  <a href='/ekipe_statistika_19_20/'><button>2019-2020</button></a>
+  <a href='/ekipe_statistika_21_22/'><button>2021-2022</button></a> 
+</p>
+</div>
+
+<div>
+<p>
+<a href='/ekipe/'><button>Nazaj</button></a>
+<a href='/'><button>Domov</button></a>
+</p>
+</div>
+
+
+
+
+  <table id="igralci" cellpadding="0" cellspacing="0" border="1">
+  <tr>
+     <th>Kratica kluba</th>
+     <th>Ime kluba</th>
+     <th>Število odigranih tekem</th>
+     <th>Zmage</th>
+     <td>Porazi</td>
+     <th>Točke</th>
+     <th>Skoki</th>
+     <th>Podaje</th>
+     <th>Izgubljene žoge</th>
+     <th>Ukradene žoge</th>
+     <td>Blokade</td>
+     <td>+/-</td>
+  </tr>
+  %for (ekipa, ime, odigrane_tekme, zmage, porazi, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri) in ekipe20_21:
+    <tr>
+       <td>{{ekipa}}</td>
+       <td>{{ime}}</td>
+       <td>{{odigrane_tekme}}</td>
+       <td>{{zmage}}</td>
+       <td>{{porazi}}</td>
+       <td>{{točke}}</td>
+       <td>{{skoki}}</td>
+       <td>{{podaje}}</td>
+       <td>{{izgubljene_žoge}}</td>
+       <td>{{ukradene_žoge}}</td>
+       <td>{{blokade}}</td>
+       <td>{{razlika_ob_igri}}</td>
+    </tr>
+  %end
+  </table>
+
+  
+  
+
+
