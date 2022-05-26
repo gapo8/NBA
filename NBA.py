@@ -203,6 +203,36 @@ def ekipe_statistika_21_22_get():
     return template('ekipe21_22.html', ekipe21_22=cur)
 
 
+#################################################################################################################################################
+#Trenerji
+
+@get('/trenerji/')
+def trenerji_get():
+    cur.execute("SELECT * FROM trenerji ORDER BY trener")
+    return template('trenerji.html', trenerji=cur)
+
+
+
+
+#################################################################################################################################################
+#Lastniki
+
+@get('/lastniki/')
+def lastniki_get():
+    cur.execute("SELECT * FROM lastniki ORDER BY ime_ekipe")
+    return template('lastniki.html', lastniki=cur)
+
+
+
+#################################################################################################################################################
+#Sponzorji
+
+@get('/sponzorji/')
+def sponzorji_get():
+    cur.execute("SELECT * FROM sponzorji ORDER BY ekipa")
+    return template('sponzorji.html', sponzorji=cur)
+
+
 
 
 

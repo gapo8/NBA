@@ -1,0 +1,35 @@
+%rebase('osnova.html', naslov='Trenerji sezone 2021/22')
+
+
+
+<p>
+<a href='/'><button>Domov</button></a>
+</p>
+
+
+
+<div>
+  Trener: <input id="isci_igralec" type="text" oninput="isci_igralec()" />
+  
+</div>
+
+  <table id="igralci" cellpadding="0" cellspacing="0" border="1">
+  <tr>
+     <th>Ime in priimek</th>
+     <th>Ekipa</th>
+     <th>Število let pri ekipi</th>
+     <th>Leta kariera</th>
+     <th>Zmage v karieri</th>
+     <th>Porazi v karieri</th>
+  </tr>
+  %for (trener, ekipa, leta_pri_ekipi, leta_kariere, zmage_v_karieri, porazi_v_karieri) in trenerji:
+    <tr>
+       <td>{{trener}}</td>
+       <td>{{ekipa}}</td>
+       <td>{{leta_pri_ekipi}}</td>
+       <td>{{leta_kariere}}</td>
+       <td>{{zmage_v_karieri}}</td>
+       <td>{{porazi_v_karieri}}</td>
+    </tr>
+  %end
+  </table>

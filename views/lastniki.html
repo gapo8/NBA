@@ -1,0 +1,35 @@
+%rebase('osnova.html', naslov='Lastniki NBA ekip')
+
+
+
+<p>
+<a href='/'><button>Domov</button></a>
+</p>
+
+
+
+<div>
+  Ekipa: <input id="isci_igralec" type="text" oninput="isci_igralec()" />
+  
+</div>
+
+  <table id="igralci" cellpadding="0" cellspacing="0" border="1">
+  <tr>
+     <th>Ekipa</th>
+     <th>Ime ekipe</th>
+     <th>Lastniki</th>
+     <th>Upravljanje</th>
+     <th>Nakupna cena</th>
+     <th>Leto nakupa</th>
+  </tr>
+  %for (ekipa, ime_ekipe, lastniki, upravljalska_enota, nakupna_cena, leto_nakupa) in lastniki:
+    <tr>
+       <td>{{ekipa}}</td>
+       <td>{{ime_ekipe}}</td>
+       <td>{{lastniki}}</td>
+       <td>{{upravljalska_enota}}</td>
+       <td>{{nakupna_cena}}</td>
+       <td>{{leto_nakupa}}</td>
+    </tr>
+  %end
+  </table>
