@@ -69,3 +69,6 @@ function isci_lastnik() {
       }
     })
   }
+
+
+
