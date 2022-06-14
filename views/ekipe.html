@@ -13,17 +13,19 @@
  <a href='/'><button>Domov</button></a>
  </p>
 
-  <table cellpadding="0" cellspacing="0" border="1">
+  <table class="table  table-hover" data-toggle="table">
+  <thead class="thead-dark">
   <tr>
-     <th>Ekipa</th>
-     <th>Ime ekipe</th>
-     <th>Lokacija</th>
-     <th>Dvorana</th>
-     <th>Kapaciteta</th>
-     <th>Ustanovitev</th>
-     <th>Konferenca</th>
-     <th>Divizija</th>
+     <th data-sortable="true">Ekipa</th>
+     <th data-sortable="true">Ime ekipe</th>
+     <th data-sortable="true">Lokacija</th>
+     <th data-sortable="true">Dvorana</th>
+     <th data-sortable="true">Kapaciteta</th>
+     <th data-sortable="true">Ustanovitev</th>
+     <th data-sortable="true">Konferenca</th>
+     <th data-sortable="true">Divizija</th>
   </tr>
+  </thead>
   %for (ekipa, ime, lokacija, dvorana, kapaciteta, ustanovitev, konferenca, divizija) in ekipe_osnovni_podatki:
     <tr>
        <td>{{ekipa}}</td>

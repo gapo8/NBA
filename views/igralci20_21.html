@@ -22,20 +22,22 @@
   
 </div>
 
-  <table id="igralci" cellpadding="0" cellspacing="0" border="1">
+  <table id="igralci" class="table  table-hover" data-toggle="table">
+  <thead class="thead-dark">
   <tr>
-     <th>Ime in priimek</th>
-     <th>Klub</th>
-     <th>Število odigranih tekem</th>
-     <th>Minute</th>
-     <th>Točke</th>
-     <th>Skoki</th>
-     <th>Podaje</th>
-     <th>Izgubljene žoge</th>
-     <th>Ukradene žoge</th>
-     <td>Blokade</td>
-     <td>+/-</td>
+     <th data-sortable="true">Ime in priimek</th>
+     <th data-sortable="true">Klub</th>
+     <th data-sortable="true">Število odigranih tekem</th>
+     <th data-sortable="true">Minute</th>
+     <th data-sortable="true">Točke</th>
+     <th data-sortable="true">Skoki</th>
+     <th data-sortable="true">Podaje</th>
+     <th data-sortable="true">Izgubljene žoge</th>
+     <th data-sortable="true">Ukradene žoge</th>
+     <th data-sortable="true">Blokade</th>
+     <th data-sortable="true">+/-</th>
   </tr>
+  </thead>
   %for (igralec, klub, odigrane_tekme, minute, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri) in igralci20_21:
     <tr>
        <td>{{igralec}}</td>

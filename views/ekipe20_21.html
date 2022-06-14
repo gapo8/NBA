@@ -18,21 +18,23 @@
 
 
 
-  <table id="igralci" cellpadding="0" cellspacing="0" border="1">
+  <table id="igralci" class="table  table-hover" data-toggle="table">
+  <thead class="thead-dark">
   <tr>
-     <th>Kratica kluba</th>
-     <th>Ime kluba</th>
-     <th>Število odigranih tekem</th>
-     <th>Zmage</th>
-     <td>Porazi</td>
-     <th>Točke</th>
-     <th>Skoki</th>
-     <th>Podaje</th>
-     <th>Izgubljene žoge</th>
-     <th>Ukradene žoge</th>
-     <td>Blokade</td>
-     <td>+/-</td>
+     <th data-sortable="true">Kratica kluba</th>
+     <th data-sortable="true">Ime kluba</th>
+     <th data-sortable="true">Število odigranih tekem</th>
+     <th data-sortable="true">Zmage</th>
+     <th data-sortable="true">Porazi</th>
+     <th data-sortable="true">Točke</th>
+     <th data-sortable="true">Skoki</th>
+     <th data-sortable="true">Podaje</th>
+     <th data-sortable="true">Izgubljene žoge</th>
+     <th data-sortable="true">Ukradene žoge</th>
+     <th data-sortable="true">Blokade</th>
+     <th data-sortable="true">+/-</th>
   </tr>
+  </thead>
   %for (ekipa, ime, odigrane_tekme, zmage, porazi, točke, skoki, podaje, izgubljene_žoge, ukradene_žoge, blokade, razlika_ob_igri) in ekipe20_21:
     <tr>
        <td>{{ekipa}}</td>

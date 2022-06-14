@@ -13,15 +13,17 @@
   
 </div>
 
-  <table id="igralci" cellpadding="0" cellspacing="0" border="1">
+  <table id="igralci" class="table  table-hover" data-toggle="table">
+  <thead class="thead-dark">
   <tr>
-     <th>Ime in priimek</th>
-     <th>Ekipa</th>
-     <th>Število let pri ekipi</th>
-     <th>Leta kariera</th>
-     <th>Zmage v karieri</th>
-     <th>Porazi v karieri</th>
+     <th data-sortable="true">Ime in priimek</th>
+     <th data-sortable="true">Ekipa</th>
+     <th data-sortable="true">Število let pri ekipi</th>
+     <th data-sortable="true">Leta kariera</th>
+     <th data-sortable="true">Zmage v karieri</th>
+     <th data-sortable="true">Porazi v karieri</th>
   </tr>
+  </thead>
   %for (trener, ekipa, leta_pri_ekipi, leta_kariere, zmage_v_karieri, porazi_v_karieri) in trenerji:
     <tr>
        <td>{{trener}}</td>
