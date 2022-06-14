@@ -21,18 +21,20 @@
   
 </div>
 
-  <table id="igralci" cellpadding="0" cellspacing="0" border="1">
+  <table id="igralci" class="table  table-hover" data-toggle="table" >
+  <thead class="thead-dark">
   <tr>
-     <th>Ime in priimek</th>
-     <th>Starost</th>
-     <th>Višina</th>
-     <th>Teža</th>
-     <th>Univerza</th>
-     <th>Država</th>
-     <th>Leto nabora</th>
-     <th>Krog nabora</th>
-     <th>Številka nabora</th>
+     <th data-sortable="true">Ime in priimek</th>
+     <th data-sortable="true">Starost</th>
+     <th data-sortable="true">Višina</th>
+     <th data-sortable="true">Teža</th>
+     <th data-sortable="true">Univerza</th>
+     <th data-sortable="true">Država</th>
+     <th data-sortable="true">Leto nabora</th>
+     <th data-sortable="true">Krog nabora</th>
+     <th data-sortable="true">Številka nabora</th>
   </tr>
+</thead>
   %for (igralec, starost, višina, teža, univerza, država, leto_nabora, krog_nabora, številka_nabora) in igralci_vsi:
     <tr>
        <td>{{igralec}}</td>
