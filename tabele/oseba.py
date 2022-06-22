@@ -24,8 +24,9 @@ def ustvari_tabelo_oseba():
             hisna_stevilka INTEGER NOT NULL,
             email TEXT NOT NULL unique,
             telefon TEXT NOT NULL,
-            uporabnisko_ime TEXT,
-            geslo TEXT
+            uporabnisko_ime CHAR UNIQUE,
+            geslo CHAR,
+            status INTEGER
             
             );
     """)
@@ -34,10 +35,10 @@ def ustvari_tabelo_oseba():
 
 def pobrisi_tabelo_oseba():
     cur.execute("""
-        DROP TABLE oseba CASCADE;
+        DROP TABLE oseba;
     """)
     conn.commit()
 
 
-#pobrisi_tabelo_oseba()
+pobrisi_tabelo_oseba()
 ustvari_tabelo_oseba()
