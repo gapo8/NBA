@@ -13,6 +13,8 @@ import os
 import hashlib
 
 
+debug = True
+
 skrivnost = "69253faf553e52b6416804f3f48e0da5cac1f9eefa7daa7bc9c3fda8fc663b1c"
 
 def nastaviSporocilo(sporocilo = None):
@@ -30,7 +32,7 @@ def nastaviSporocilo(sporocilo = None):
 def preveriUporabnika(): 
     uporabnisko_ime = request.get_cookie("uporabnisko_ime", secret=skrivnost)
     if uporabnisko_ime:
-       # cur = baza.cursor()    
+  #      cur = baza.cursor()    
         uporabnik = None
         try: 
             cur.execute("SELECT * FROM oseba WHERE uporabnisko_ime = %s", [uporabnisko_ime])
@@ -104,10 +106,10 @@ def registracija_post():
         return
     zgostitev = hashGesla(geslo)
     cur.execute("""INSERT INTO oseba
-                (id,ime,priimek,ulica, hisna_stevilka, email,telefon, uporabnisko_ime, geslo)
+                (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, uporabnisko_ime, geslo)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email, telefon, uporabnisko_ime, zgostitev))
-    bottle.Response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, path='/', secret=skrivnost)
-    redirect('/osebe/')
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime,  secret=skrivnost)
+    redirect('/igralci/')
 
 
 @get('/prijava/')
@@ -125,7 +127,8 @@ def prijava_post():
     oseba = cur   
     hashBaza = None
     try: 
-        hashBaza = cur.execute("SELECT geslo FROM oseba WHERE uporabnisko_ime = %s", [uporabnisko_ime])
+        hashBaza = cur.execute("SELECT geslo FROM oseba WHERE uporabnisko_ime = %s", (uporabnisko_ime, ))
+        hashBaza = cur.fetchone()
         hashBaza = hashBaza[0]
     except:
         hashBaza = None
@@ -137,13 +140,13 @@ def prijava_post():
         nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
         redirect('/prijava/')
         return
-    bottle.Response.set_cookie(key='uporabnisko_ime', value=uporabnisko_ime, secret=skrivnost)
+    response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
     redirect('/igralci/')
     
 @get('/odjava/')
 def odjava_get():
-    bottle.Response.delete_cookie(key='uporabnisko_ime')
-    redirect('/prijava/')
+    response.delete_cookie('uporabnisko_ime')
+    redirect('/')
 
 
 

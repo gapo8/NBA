@@ -17,16 +17,16 @@ cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 def ustvari_tabelo_oseba():
     cur.execute("""
         CREATE TABLE oseba (
-            id SERIAL PRIMARY KEY,
+            emso TEXT PRIMARY KEY,
             ime TEXT NOT NULL,
             priimek TEXT NOT NULL,
             ulica TEXT NOT NULL,
             hisna_stevilka INTEGER NOT NULL,
             email TEXT NOT NULL unique,
             telefon TEXT NOT NULL,
-            uporabnisko_ime CHAR UNIQUE,
-            geslo CHAR,
-            status INTEGER
+            uporabnisko_ime TEXT UNIQUE,
+            geslo TEXT
+            
             
             );
     """)
