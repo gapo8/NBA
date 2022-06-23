@@ -21,9 +21,9 @@ def nastaviSporocilo(sporocilo = None):
     # global napakaSporocilo
     staro = request.get_cookie("sporocilo", secret=skrivnost)
 #    if sporocilo is None:
-#        bottle.Response.delete_cookie(key='sporocilo', path='/', secret=skrivnost)
+#        response.delete_cookie(key='sporocilo',  secret=skrivnost)
 #    else:
-#        bottle.Response.set_cookie(key='sporocilo', value=sporocilo, path="/", secret=skrivnost)
+#        response.set_cookie(key='sporocilo', value=sporocilo,  secret=skrivnost)
     return staro 
 
 
@@ -52,9 +52,15 @@ def preveriUporabnika():
 def static(filename):
     return static_file(filename, root='static')
 
+#pred prijavo ali registracijo
 @get('/')
 def index():
     return template('index.html')
+
+#po prijavi ali registraciji
+@get('/zacetna/')
+def izacetna():
+    return template('zacetna.html')
 
 ################################################################################################################################################
 #PRIJAVA, REGISTRACIJA, ODJAVA
@@ -109,7 +115,7 @@ def registracija_post():
                 (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, uporabnisko_ime, geslo)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email, telefon, uporabnisko_ime, zgostitev))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime,  secret=skrivnost)
-    redirect('/igralci/')
+    redirect('/zacetna/')
 
 
 @get('/prijava/')
@@ -141,7 +147,7 @@ def prijava_post():
         redirect('/prijava/')
         return
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
-    redirect('/igralci/')
+    redirect('/zacetna/')
     
 @get('/odjava/')
 def odjava_get():
