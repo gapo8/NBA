@@ -1,26 +1,29 @@
 %rebase('osnova.html', naslov='Statistika igralcev za sezono 2019/2020')
 
+<center>
 <div>
-  Statistični podatki igralcev:
+  <p class="lead">Statistični podatki igralcev:</p>
 <p>
-  <a href='/igralci_statistika_20_21/'><button>2020-2021</button></a>
-  <a href='/igralci_statistika_21_22/'><button>2021-2022</button></a> 
+  <a href='/igralci_statistika_20_21/'><button class="btn btn-outline-dark">2020-2021</button></a>
+  <a href='/igralci_statistika_21_22/'><button class="btn btn-outline-dark">2021-2022</button></a> 
 </p>
 </div>
+</center>
 
+<center>
 <div>
 <p>
-<a href='/igralci/'><button>Nazaj</button></a>
-<a href='/'><button>Domov</button></a>
+<a href='/igralci/'><button class="btn btn-outline-dark btn-sm">Nazaj</button></a>
+<a href='/zacetna/'><button class="btn btn-outline-dark btn-sm">Domov</button></a>
 </p>
 </div>
+</center>
 
 
-<div>
+  <div class="col py-2">
   Igralec: <input id="isci_igralec" type="text" oninput="isci_igralec()" />
-  Točke: <input id="isci_tocke" type="text" oninput="isci_tocke()" />
-  
-</div>
+  </div>
+
 
 
   <table id="igralci" class="table  table-hover" data-toggle="table">
