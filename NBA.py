@@ -20,11 +20,14 @@ skrivnost = "69253faf553e52b6416804f3f48e0da5cac1f9eefa7daa7bc9c3fda8fc663b1c"
 def nastaviSporocilo(sporocilo = None):
     # global napakaSporocilo
     staro = request.get_cookie("sporocilo", secret=skrivnost)
-#    if sporocilo is None:
-#        response.delete_cookie(key='sporocilo',  secret=skrivnost)
-#    else:
-#        response.set_cookie(key='sporocilo', value=sporocilo,  secret=skrivnost)
+    #if sporocilo is None:
+        #response.delete_cookie('sporocilo',  secret=skrivnost)
+    #else:
+        #response.set_cookie('sporocilo', sporocilo,  secret=skrivnost)
     return staro 
+
+
+
 
 
 
@@ -71,14 +74,16 @@ def hashGesla(s):
     m.update(s.encode("utf-8"))
     return m.hexdigest()
 
+napaka=None
+
 @get('/registracija/')
 def registracija_get():
-    napaka = nastaviSporocilo()
+    napaka = None
     return template('registracija.html', napaka=napaka)
 
 @post('/registracija/')
 def registracija_post():
-    id = request.forms.id
+    emso = request.forms.emso
     ime = request.forms.ime
     priimek = request.forms.priimek
     ulica = request.forms.ulica
@@ -99,21 +104,16 @@ def registracija_post():
     except:
         uporabnik = None
     if uporabnik is not None:
-        nastaviSporocilo('Registracija ni možna') 
-        redirect('/registracija/')
-        return
+        return template('registracija.html',   napaka="Registracija ni možna")
     if len(geslo) < 4:
-        nastaviSporocilo('Geslo mora imeti vsaj 4 znake.') 
-        redirect('/registracija/')
-        return
+        return template('registracija.html',   napaka="Geslo mora imeti vsaj 4 znake.")
     if geslo != geslo2:
-        nastaviSporocilo('Gesli se ne ujemata.') 
-        redirect('/registracija/')
-        return
+        return template('registracija.html',   napaka="Gesli se ne ujemata.")
+        
     zgostitev = hashGesla(geslo)
     cur.execute("""INSERT INTO oseba
                 (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, uporabnisko_ime, geslo)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)""", (id,ime,priimek,ulica, hisna_stevilka, email, telefon, uporabnisko_ime, zgostitev))
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)""", (emso,ime,priimek,ulica, hisna_stevilka, email, telefon, uporabnisko_ime, zgostitev))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime,  secret=skrivnost)
     redirect('/zacetna/')
 
@@ -127,7 +127,6 @@ def prijava_post():
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
     if uporabnisko_ime is None or geslo is None:
-        nastaviSporocilo('Uporabniško ima in geslo morata biti neprazna') 
         redirect('/prijava/')
         return
     oseba = cur   
@@ -139,11 +138,9 @@ def prijava_post():
     except:
         hashBaza = None
     if hashBaza is None:
-        nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
         redirect('/prijava/')
         return
     if hashGesla(geslo) != hashBaza:
-        nastaviSporocilo('Uporabniško geslo ali ime nista ustrezni') 
         redirect('/prijava/')
         return
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)

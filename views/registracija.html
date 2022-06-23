@@ -22,6 +22,14 @@
 <h2>Registracija</h2>
 </center>
 
+<div class="container">
+  % if napaka:
+  <div class="alert alert-danger">
+      {{napaka}}
+  </div>
+  % end
+</div>
+
 <form action="/registracija/" method="post" autocomplete="off">
     <div class="form-group">
         <div class="form-group col-md-6">
