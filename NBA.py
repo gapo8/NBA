@@ -120,7 +120,8 @@ def registracija_post():
 
 @get('/prijava/')
 def prijava_get():
-    return template('prijava.html')
+    napaka2 = None
+    return template('prijava.html', napaka2=napaka2)
 
 @post('/prijava/')
 def prijava_post():
@@ -138,11 +139,9 @@ def prijava_post():
     except:
         hashBaza = None
     if hashBaza is None:
-        redirect('/prijava/')
-        return
+        return template('prijava.html',   napaka2="Uporabniško ime ali geslo nista ustrezni")
     if hashGesla(geslo) != hashBaza:
-        redirect('/prijava/')
-        return
+        return template('prijava.html',   napaka2="Uporabniško ime ali geslo nista ustrezni")
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
     redirect('/zacetna/')
     

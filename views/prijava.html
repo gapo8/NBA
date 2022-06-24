@@ -19,11 +19,24 @@
 
 <body>
 
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Vpisna stran</a>
+      <a class="navbar-brand" href="/registracija/">Registracija</a>
+    </div>
+  </nav>
+
 <center>
 <h2>Prijava</h2>
 </center>
 
-
+<div class="container">
+  % if napaka2:
+  <div class="alert alert-danger">
+      {{napaka2}}
+  </div>
+  % end
+</div>
 
 <form action="/prijava/" method="post" autocomplete="off">
     <div class="form-group">
