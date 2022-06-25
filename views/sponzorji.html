@@ -1,21 +1,31 @@
 %rebase('osnova.html', naslov='Sponzorji NBA ekip')
 
-
+<div class="row">
 <div class="col py-2">
   Ekipa: <input id="isci_igralec" type="text" oninput="isci_igralec()" />
 </div>
+
+<div class="col py-2 ml-auto">
+  <a href='/sponzorji/dodaj/'><button class="btn btn-outline-dark">Dodaj ekipo in sponzorja</button></a>
+</div>
+</div>
+
 
   <table id="igralci" data-toggle="table">
   <thead class="thead-dark">
   <tr>
      <th data-sortable="true">Ekipa</th>
      <th data-sortable="true">Sponzor</th>
+     <th>Uredi sponzorje</th>
+     <th>Izbriši vrstice</th>
   </tr>
   </thead>
   %for (ekipa, sponzor) in sponzorji:
     <tr>
        <td>{{ekipa}}</td>
        <td>{{sponzor}}</td>
+       <td><a href="/sponzorji/uredi/{{ekipa}}">Uredi sponzorja</a></td>
+       <td><a href="/sponzorji/izbrisi/{{ekipa}}">Izbriši vrstico</a></td>
     </tr>
   %end
   </table>

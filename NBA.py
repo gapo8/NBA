@@ -238,11 +238,50 @@ def sponzorji_get():
     return template('sponzorji.html', sponzorji=cur)
 
 
+@get('/sponzorji/dodaj/')
+def dodaj_sponzorja_get():
+    return template('sponzorji_dodaj.html')
 
 
+@post('/sponzorji/dodaj/') 
+def dodaj_sponzorja_post():
+    ekipa = request.forms.ekipa
+    sponzor = request.forms.sponzor
+    cur.execute("INSERT INTO sponzorji (ekipa, sponzor) VALUES (%s, %s)", 
+         (ekipa, sponzor))
+    redirect('/sponzorji/')
 
 
+@get('/sponzorji/uredi/<ekipa>')
+def uredi_sponzorja_get(ekipa):
+    ekipa = ekipa
+    return template('sponzorji_uredi.html', ekipa=ekipa)
 
+
+@post('/sponzorji/uredi/<ekipa>')
+def uredi_sponzorja_post(ekipa):
+    sponzor = request.forms.sponzor
+    ekipa = ekipa
+    cur.execute("UPDATE sponzorji SET sponzor=%s WHERE ekipa=%s",
+                    (sponzor, ekipa))
+    conn.commit()
+    redirect('/sponzorji/')
+
+
+@get('/sponzorji/izbrisi/<ekipa>')
+def izbrisi_sponzorja_get(ekipa):
+    ekipa = ekipa
+    return template('sponzorji_izbrisi.html', ekipa=ekipa)
+
+@post('/sponzorji/izbrisi/<ekipa>')
+def uredi_sponzorja_post(ekipa):
+    ekipa = ekipa
+    cur.execute("DELETE FROM sponzorji WHERE ekipa=%s",
+                    [ekipa])
+    conn.commit()
+    redirect('/sponzorji/')
+
+##########################################################################################################################################################
 @get('/osebe/')
 def osebe_get():
     cur.execute("SELECT * FROM oseba ORDER BY id")

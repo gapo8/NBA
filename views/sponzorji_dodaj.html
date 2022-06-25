@@ -1,0 +1,27 @@
+%rebase('osnova.html', naslov='Dodaja sponzorja')
+
+<form action="/sponzorji/dodaj/" method="post">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="ekipa">Ekipa</label>
+            <input id="ekipa" name="ekipa" type="text" class="form-control" value="{{komitent[0] if defined('komitent') else ''}}" required
+                oninput="this.setCustomValidity('')"
+                oninvalid="this.setCustomValidity('Obvezno polje')"
+                />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="sponzor">Sponzor</label>
+            <input id="sponzor" name="sponzor" type="text" class="form-control" value="{{komitent[1] if defined('komitent') else ''}}" required
+                oninput="this.setCustomValidity('')"
+                oninvalid="this.setCustomValidity('Obvezno polje')"
+                />
+
+        </div>
+    <div class="form-row col">
+        <button class="btn btn-outline-dark" type="submit">
+            {{'Popravi' if defined('komitent') else 'Dodaj'}}
+        </button>
+    </div>
+</form>

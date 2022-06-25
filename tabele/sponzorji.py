@@ -17,7 +17,7 @@ cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 def ustvari_tabelo_sponzorji():
     cur.execute("""
         CREATE TABLE sponzorji (
-            ekipa TEXT REFERENCES ekipe_osnovni_podatki(ekipa),
+            ekipa TEXT,
             sponzor TEXT NOT NULL    
             );
     """)

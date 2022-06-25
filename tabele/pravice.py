@@ -24,6 +24,7 @@ def podeli_pravice():
         GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO tinema WITH GRANT OPTION;
         GRANT SELECT ON ALL TABLES IN SCHEMA public TO javnost WITH GRANT OPTION;
         GRANT INSERT ON ALL TABLES IN SCHEMA public TO javnost WITH GRANT OPTION;
+        GRANT ALL ON sponzorji TO javnost;
     """)
     conn.commit()
 

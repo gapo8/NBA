@@ -1,0 +1,26 @@
+% rebase('osnova.html', naslov='Izbriši sponzorja in ekipo')
+
+<center>
+<div>
+<p class="lead">Ali res želite izbrisati to vrstico?</p>
+<p>
+<div class="row">
+  <form action="/sponzorji/izbrisi/{{ekipa}}" method="POST">
+    <div class="form-row col">
+      <button class="btn btn-outline-dark" type="submit">
+        Izbriši
+      </button>
+    </div>
+  </form>
+
+  <div class="form-row col">
+    <a href="/sponzorji/">
+    <button class="btn btn-outline-dark"> 
+    Nazaj
+    </button>
+    </a> 
+  </div>
+</p>
+</div>
+</div>
+</center>
