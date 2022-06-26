@@ -3,24 +3,22 @@
 <center>
 <div>
 <p class="lead">Ali res želite izbrisati to vrstico?</p>
-<p>
-<div class="row">
-  <form action="/sponzorji/izbrisi/{{ekipa}}" method="POST">
-    <div class="form-row col">
-      <button class="btn btn-outline-dark" type="submit">
-        Izbriši
-      </button>
-    </div>
-  </form>
-
-  <div class="form-row col">
-    <a href="/sponzorji/">
-    <button class="btn btn-outline-dark"> 
-    Nazaj
-    </button>
-    </a> 
-  </div>
-</p>
-</div>
 </div>
 </center>
+
+
+<div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+          <div class="col py-2">
+  <form action="/sponzorji/izbrisi/{{ekipa}}" method="POST">
+      <button class="btn btn-success btn-lg" type="submit">Izbriši</button>
+  </form>
+          </div>
+          <div class="col py-2">
+              <a href="/sponzorji/"><button class="btn btn-danger btn-lg">Nazaj</button></a>
+          </div>
+      </div>
+    </div>
+</div>
+

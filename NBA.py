@@ -44,7 +44,7 @@ def preveriUporabnika():
             uporabnik = None
         if uporabnik: 
             return uporabnik
-    redirect('/prijava/')
+    redirect(url=('prijava_get'))
 
 
 
@@ -62,7 +62,7 @@ def index():
 
 #po prijavi ali registraciji
 @get('/zacetna/')
-def izacetna():
+def zacetna():
     return template('zacetna.html')
 
 ################################################################################################################################################
@@ -95,7 +95,7 @@ def registracija_post():
     geslo2 = request.forms.geslo2
     if uporabnisko_ime is None or geslo is None or geslo2 is None:
         nastaviSporocilo('Registracija ni možna') 
-        redirect('/registracija/')
+        redirect(url('registracija_get'))
         return
     oseba = cur 
     uporabnik = None
@@ -115,7 +115,7 @@ def registracija_post():
                 (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, uporabnisko_ime, geslo)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)""", (emso,ime,priimek,ulica, hisna_stevilka, email, telefon, uporabnisko_ime, zgostitev))
     response.set_cookie('uporabnisko_ime', uporabnisko_ime,  secret=skrivnost)
-    redirect('/zacetna/')
+    redirect(url('zacetna'))
 
 
 @get('/prijava/')
@@ -128,7 +128,7 @@ def prijava_post():
     uporabnisko_ime = request.forms.uporabnisko_ime
     geslo = request.forms.geslo
     if uporabnisko_ime is None or geslo is None:
-        redirect('/prijava/')
+        redirect(url('prijava_get'))
         return
     oseba = cur   
     hashBaza = None
@@ -143,12 +143,12 @@ def prijava_post():
     if hashGesla(geslo) != hashBaza:
         return template('prijava.html',   napaka2="Uporabniško ime ali geslo nista ustrezni")
     response.set_cookie('uporabnisko_ime', uporabnisko_ime, secret=skrivnost)
-    redirect('/zacetna/')
+    redirect(url('zacetna'))
     
 @get('/odjava/')
 def odjava_get():
     response.delete_cookie('uporabnisko_ime')
-    redirect('/')
+    redirect(url('index'))
 
 
 
@@ -249,7 +249,7 @@ def dodaj_sponzorja_post():
     sponzor = request.forms.sponzor
     cur.execute("INSERT INTO sponzorji (ekipa, sponzor) VALUES (%s, %s)", 
          (ekipa, sponzor))
-    redirect('/sponzorji/')
+    redirect(url('sponzorji_get'))
 
 
 @get('/sponzorji/uredi/<ekipa>')
@@ -265,7 +265,7 @@ def uredi_sponzorja_post(ekipa):
     cur.execute("UPDATE sponzorji SET sponzor=%s WHERE ekipa=%s",
                     (sponzor, ekipa))
     conn.commit()
-    redirect('/sponzorji/')
+    redirect(url('sponzorji_get'))
 
 
 @get('/sponzorji/izbrisi/<ekipa>')
@@ -279,7 +279,7 @@ def uredi_sponzorja_post(ekipa):
     cur.execute("DELETE FROM sponzorji WHERE ekipa=%s",
                     [ekipa])
     conn.commit()
-    redirect('/sponzorji/')
+    redirect(url('sponzorji_get'))
 
 ##########################################################################################################################################################
 @get('/osebe/')
