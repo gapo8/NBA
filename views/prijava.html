@@ -21,8 +21,8 @@
 
   <nav class="navbar navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="/">Vpisna stran</a>
-      <a class="navbar-brand" href="/registracija/">Registracija</a>
+      <a class="navbar-brand" href="{{url('index')}}">Vpisna stran</a>
+      <a class="navbar-brand" href="{{url('registracija_get')}}">Registracija</a>
     </div>
   </nav>
 
@@ -38,7 +38,7 @@
   % end
 </div>
 
-<form action="/prijava/" method="post" autocomplete="off">
+<form action="{{url('prijava_get')}}" method="post" autocomplete="off">
     <div class="form-group">
       <div class="form-group col-md-6">
         <label for="uporabnisko_ime">Uporabniško ime</label>

@@ -282,10 +282,7 @@ def uredi_sponzorja_post(ekipa):
     redirect(url('sponzorji_get'))
 
 ##########################################################################################################################################################
-@get('/osebe/')
-def osebe_get():
-    cur.execute("SELECT * FROM oseba ORDER BY id")
-    return template('osebe.html', oseba=cur)
+
 
 
 

@@ -17,19 +17,19 @@
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
-      <a class="navbar-brand" href="/zacetna/">
+      <a class="navbar-brand" href="{{url('zacetna')}}">
         <img src="https://upload.wikimedia.org/wikipedia/sl/0/02/Nba-logo.jpg" alt=""  height="24" loading="lazy">
         Domov
       </a>
-      <a class="navbar-brand" href="/igralci/">Igralci</a>
-      <a class="navbar-brand" href="/ekipe/">Ekipe</a>
-      <a class="navbar-brand" href="/trenerji/">Trenerji</a>
-      <a class="navbar-brand" href="/lastniki/">Lastniki</a>
-      <a class="navbar-brand" href="/sponzorji/">Sponzorji</a>
+      <a class="navbar-brand" href="{{url('igralci_get')}}">Igralci</a>
+      <a class="navbar-brand" href="{{url('ekipe_get')}}">Ekipe</a>
+      <a class="navbar-brand" href="{{url('trenerji_get')}}">Trenerji</a>
+      <a class="navbar-brand" href="{{url('lastniki_get')}}">Lastniki</a>
+      <a class="navbar-brand" href="{{url('sponzorji_get')}}">Sponzorji</a>
       
       <div class="navbar-end">
         <span>
-          <form method="GET" action="/odjava/">
+          <form method="GET" action="{{url('odjava_get')}}">
             <input type="submit" value="Odjava">
           </form>
         </span>

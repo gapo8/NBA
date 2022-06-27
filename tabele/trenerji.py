@@ -55,7 +55,12 @@ def spremeni_tabelo_trenerji():
     """)
     conn.commit()
 
-pobrisi_tabelo_trenerji()
-ustvari_tabelo_trenerji()
-uvozi_podatke_trenerji()
-spremeni_tabelo_trenerji()
+
+
+
+
+
+#pobrisi_tabelo_trenerji()
+#ustvari_tabelo_trenerji()
+#uvozi_podatke_trenerji()
+#spremeni_tabelo_trenerji()
