@@ -10,16 +10,18 @@
   <tr>
      <th data-sortable="true">Ime in priimek</th>
      <th data-sortable="true">Ekipa</th>
+     <th data-sortable="true">Ime ekipe</th>
      <th data-sortable="true">Število let pri ekipi</th>
      <th data-sortable="true">Leta kariera</th>
      <th data-sortable="true">Zmage v karieri</th>
      <th data-sortable="true">Porazi v karieri</th>
   </tr>
   </thead>
-  %for (trener, ekipa, leta_pri_ekipi, leta_kariere, zmage_v_karieri, porazi_v_karieri) in trenerji:
+  %for (trener, ekipa, leta_pri_ekipi, leta_kariere, zmage_v_karieri, porazi_v_karieri, ime) in trenerji:
     <tr>
        <td>{{trener}}</td>
        <td>{{ekipa}}</td>
+       <td>{{ime}}</td>
        <td>{{leta_pri_ekipi}}</td>
        <td>{{leta_kariere}}</td>
        <td>{{zmage_v_karieri}}</td>

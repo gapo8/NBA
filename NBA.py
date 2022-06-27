@@ -213,7 +213,10 @@ def ekipe_statistika_21_22_get():
 
 @get('/trenerji/')
 def trenerji_get():
-    cur.execute("SELECT * FROM trenerji ORDER BY trener")
+    cur.execute("""
+    SELECT trenerji.*, ekipe_osnovni_podatki.ime FROM trenerji 
+    LEFT JOIN ekipe_osnovni_podatki ON trenerji.ekipa=ekipe_osnovni_podatki.ekipa
+    ORDER BY trener""")
     return template('trenerji.html', trenerji=cur)
 
 
