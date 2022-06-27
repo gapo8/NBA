@@ -24,8 +24,8 @@
     <tr>
        <td>{{ekipa}}</td>
        <td>{{sponzor}}</td>
-       <td><a href="/sponzorji/uredi/{{ekipa}}">Uredi sponzorja</a></td>
-       <td><a href="/sponzorji/izbrisi/{{ekipa}}">Izbriši vrstico</a></td>
+       <td><a href="{{url('uredi_sponzorja_get', ekipa=ekipa)}}">Uredi sponzorja</a></td>
+       <td><a href="{{url('izbrisi_sponzorja_get', ekipa=ekipa)}}">Izbriši vrstico</a></td>
     </tr>
   %end
   </table>

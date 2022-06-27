@@ -1,7 +1,7 @@
 % rebase('osnova.html', naslov='Uredi sponzorja')
 
 
-  <form action="/sponzorji/uredi/{{ekipa}}" method="POST">
+  <form action="{{url('uredi_sponzorja_get', ekipa=ekipa)}}" method="POST">
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="sponzor">Nov sponzor</label>

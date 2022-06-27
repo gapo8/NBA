@@ -11,12 +11,12 @@
     <div class="row justify-content-md-center">
       <div class="col-md-auto">
           <div class="col py-2">
-  <form action="/sponzorji/izbrisi/{{ekipa}}" method="POST">
+  <form action="{{url('izbrisi_sponzorja_get', ekipa=ekipa)}}" method="POST">
       <button class="btn btn-success btn-lg" type="submit">Izbriši</button>
   </form>
           </div>
           <div class="col py-2">
-              <a href="/sponzorji/"><button class="btn btn-danger btn-lg">Nazaj</button></a>
+              <a href="{{url('sponzorji_get')}}"><button class="btn btn-danger btn-lg">Nazaj</button></a>
           </div>
       </div>
     </div>
