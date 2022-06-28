@@ -329,9 +329,11 @@ def uredi_sponzorja_post(ekipa, trenutni_sponzor):
 # Poženemo strežnik na portu 8080, glej http://localhost:8080/
 # Iz bottle dokumentacije o parametru reloader=True: Every time you edit a module file, 
 # the reloader restarts the server process and loads the newest version of your code. 
-conn = psycopg2.connect(database='sem2022_gasperp', host='baza.fmf.uni-lj.si', user='javnost', password='javnogeslo', port=DB_PORT)
+conn = psycopg2.connect(database=auth.db, host=auth.host, user=auth.user, password=auth.password, port=DB_PORT)
 #conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT) # onemogocimo transakcije
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 run(host='localhost', port=SERVER_PORT, reloader=RELOADER)
+
+
 
 ######################################################################
