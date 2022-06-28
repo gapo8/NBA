@@ -13,6 +13,11 @@ import os
 import hashlib
 
 
+SERVER_PORT = os.environ.get('BOTTLE_PORT', 8080)
+RELOADER = os.environ.get('BOTTLE_RELOADER', True)
+DB_PORT = os.environ.get('POSTGRES_PORT', 5432)
+
+
 debug = True
 
 skrivnost = "69253faf553e52b6416804f3f48e0da5cac1f9eefa7daa7bc9c3fda8fc663b1c"
@@ -255,32 +260,36 @@ def dodaj_sponzorja_post():
     redirect(url('sponzorji_get'))
 
 
-@get('/sponzorji/uredi/<ekipa>')
-def uredi_sponzorja_get(ekipa):
+@get('/sponzorji/uredi/<ekipa>/<trenutni_sponzor>')
+def uredi_sponzorja_get(ekipa, trenutni_sponzor):
     ekipa = ekipa
-    return template('sponzorji_uredi.html', ekipa=ekipa)
+    trenutni_sponzor = trenutni_sponzor
+    return template('sponzorji_uredi.html', ekipa=ekipa, trenutni_sponzor=trenutni_sponzor)
 
 
-@post('/sponzorji/uredi/<ekipa>')
-def uredi_sponzorja_post(ekipa):
+@post('/sponzorji/uredi/<ekipa>/<trenutni_sponzor>')
+def uredi_sponzorja_post(ekipa, trenutni_sponzor):
     sponzor = request.forms.sponzor
     ekipa = ekipa
-    cur.execute("UPDATE sponzorji SET sponzor=%s WHERE ekipa=%s",
-                    (sponzor, ekipa))
+    trenutni_sponzor = trenutni_sponzor
+    cur.execute("UPDATE sponzorji SET sponzor=%s WHERE ekipa=%s AND sponzor=%s",
+                    (sponzor, ekipa, trenutni_sponzor))
     conn.commit()
     redirect(url('sponzorji_get'))
 
 
-@get('/sponzorji/izbrisi/<ekipa>')
-def izbrisi_sponzorja_get(ekipa):
+@get('/sponzorji/izbrisi/<ekipa>/<trenutni_sponzor>')
+def izbrisi_sponzorja_get(ekipa, trenutni_sponzor):
     ekipa = ekipa
-    return template('sponzorji_izbrisi.html', ekipa=ekipa)
+    trenutni_sponzor = trenutni_sponzor
+    return template('sponzorji_izbrisi.html', ekipa=ekipa, trenutni_sponzor=trenutni_sponzor)
 
-@post('/sponzorji/izbrisi/<ekipa>')
-def uredi_sponzorja_post(ekipa):
+@post('/sponzorji/izbrisi/<ekipa>/<trenutni_sponzor>')
+def uredi_sponzorja_post(ekipa, trenutni_sponzor):
     ekipa = ekipa
-    cur.execute("DELETE FROM sponzorji WHERE ekipa=%s",
-                    [ekipa])
+    trenutni_sponzor = trenutni_sponzor
+    cur.execute("DELETE FROM sponzorji WHERE ekipa=%s AND sponzor=%s",
+                    [ekipa, trenutni_sponzor])
     conn.commit()
     redirect(url('sponzorji_get'))
 
@@ -310,9 +319,9 @@ def uredi_sponzorja_post(ekipa):
 # Poženemo strežnik na portu 8080, glej http://localhost:8080/
 # Iz bottle dokumentacije o parametru reloader=True: Every time you edit a module file, 
 # the reloader restarts the server process and loads the newest version of your code. 
-conn = psycopg2.connect(database='sem2022_gasperp', host='baza.fmf.uni-lj.si', user='javnost', password='javnogeslo')
+conn = psycopg2.connect(database='sem2022_gasperp', host='baza.fmf.uni-lj.si', user='javnost', password='javnogeslo', port=DB_PORT)
 conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT) # onemogocimo transakcije
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
-run(host='localhost', port=8080, reloader=True)
+run(host='localhost', port=SERVER_PORT, reloader=RELOADER)
 
 ######################################################################
