@@ -1,4 +1,7 @@
 # NBA 2019/20, 2020/21 in 2021/22
+### Projektna naloga pri predmetu Osnove podatkovnih baz 
+#### Avtorja: Gašper Potočnik, Tine Markočič
+
 ![NBA](NBA.png)
 
 
