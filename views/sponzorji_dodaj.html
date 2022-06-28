@@ -1,5 +1,14 @@
 %rebase('osnova.html', naslov='Dodaja sponzorja')
 
+
+<div class="container">
+    % if napaka:
+    <div class="alert alert-danger">
+        {{napaka}}
+    </div>
+    % end
+  </div>
+
 <form action="{{url('dodaj_sponzorja_get')}}" method="post">
     <div class="form-row">
         <div class="form-group col-md-6">

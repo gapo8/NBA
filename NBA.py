@@ -248,13 +248,23 @@ def sponzorji_get():
 
 @get('/sponzorji/dodaj/')
 def dodaj_sponzorja_get():
-    return template('sponzorji_dodaj.html')
+    napaka = None
+    return template('sponzorji_dodaj.html', napaka=napaka)
 
 
 @post('/sponzorji/dodaj/') 
 def dodaj_sponzorja_post():
     ekipa = request.forms.ekipa
     sponzor = request.forms.sponzor
+    hashBaza = None
+    try:
+        hashBaza = cur.execute("SELECT ekipa FROM sponzorji WHERE ekipa=%s", (ekipa, ))
+        hashBaza = cur.fetchone()
+        hashBaza = hashBaza[0] 
+    except:
+        hashBaza = None
+    if hashBaza is None:
+        return template('sponzorji_dodaj.html',   napaka="Sponzorja lahko dodaš samo obstoječi ekipi")
     cur.execute("INSERT INTO sponzorji (ekipa, sponzor) VALUES (%s, %s)", 
          (ekipa, sponzor))
     redirect(url('sponzorji_get'))
@@ -320,7 +330,7 @@ def uredi_sponzorja_post(ekipa, trenutni_sponzor):
 # Iz bottle dokumentacije o parametru reloader=True: Every time you edit a module file, 
 # the reloader restarts the server process and loads the newest version of your code. 
 conn = psycopg2.connect(database='sem2022_gasperp', host='baza.fmf.uni-lj.si', user='javnost', password='javnogeslo', port=DB_PORT)
-conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT) # onemogocimo transakcije
+#conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT) # onemogocimo transakcije
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor) 
 run(host='localhost', port=SERVER_PORT, reloader=RELOADER)
 
