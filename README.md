@@ -4,4 +4,4 @@
 
 
 ## Spletni dostop
-* [![bottle.py](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gapo8/NBA.git/main?urlpath=proxy/8080/) Aplikacija `bottle.py`
+* [![bottle.py](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gapo8/NBA/main?urlpath=proxy/8080/) Aplikacija `bottle.py`
