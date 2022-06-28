@@ -114,7 +114,39 @@ def registracija_post():
         return template('registracija.html',   napaka="Geslo mora imeti vsaj 4 znake.")
     if geslo != geslo2:
         return template('registracija.html',   napaka="Gesli se ne ujemata.")
-        
+    #preprečimo podvajanje uporabniškega imena
+    hashBaza = None
+    try: 
+        hashBaza = cur.execute("SELECT uporabnisko_ime FROM oseba WHERE uporabnisko_ime = %s", (uporabnisko_ime, ))
+        hashBaza = cur.fetchone()
+        hashBaza = hashBaza[0]
+    except:
+        hashBaza = None
+    if hashBaza is not None:
+        return template('registracija.html',   napaka="Uporabniško ime že obstaja.")
+
+    #preprečimo podvajanje emaila
+    mail = None
+    try: 
+        mail = cur.execute("SELECT email FROM oseba WHERE email = %s", (email, ))
+        mail = cur.fetchone()
+        mail = mail[0]
+    except:
+        mail = None
+    if mail is not None:
+        return template('registracija.html',   napaka="Email že obstaja.")
+
+    #preprečimo podvajanje emša
+    em = None
+    try: 
+        em = cur.execute("SELECT emso FROM oseba WHERE emso = %s", (emso, ))
+        em = cur.fetchone()
+        em = em[0]
+    except:
+        em = None
+    if em is not None:
+        return template('registracija.html',   napaka="Emšo že obstaja.")
+
     zgostitev = hashGesla(geslo)
     cur.execute("""INSERT INTO oseba
                 (emso,ime,priimek,ulica, hisna_stevilka, email,telefon, uporabnisko_ime, geslo)
